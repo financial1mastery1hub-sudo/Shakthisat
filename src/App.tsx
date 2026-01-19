@@ -1,44 +1,26 @@
-import { useEffect } from 'react';
-import ScrollExpandMedia from './components/ui/scroll-expansion-hero';
-import MissionOverview from './components/sections/MissionOverview';
-import WhatIsShakthiSat from './components/sections/WhatIsShakthiSat';
-import WhyGirlsInSpace from './components/sections/WhyGirlsInSpace';
-import Why108Countries from './components/sections/Why108Countries';
-
-const ShakthiSatContent = () => {
-  return (
-    <div className='space-y-0'>
-      <MissionOverview />
-      <WhatIsShakthiSat />
-      <WhyGirlsInSpace />
-      <Why108Countries />
-    </div>
-  );
-};
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/layout/Layout';
+import Home from './pages/Home';
+import Partners from './pages/Partners';
+import About from './pages/About';
+import Advisors from './pages/Advisors';
+import Countries from './pages/Countries';
+import Devices from './pages/Devices';
 
 function App() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    const resetEvent = new Event('resetSection');
-    window.dispatchEvent(resetEvent);
-  }, []);
-
   return (
-    <div className='min-h-screen bg-black overflow-x-hidden'>
-      <ScrollExpandMedia
-        mediaType='video'
-        mediaSrc='https://www.youtube.com/watch?v=vU6PDFdgf8k&t=6s'
-        bgImageSrc='https://images.unsplash.com/photo-1446776877081-d282a0f896e2?q=80&w=1920&auto=format&fit=crop'
-        title='ShakthiSAT Mission'
-        date='Global Space Initiative'
-        scrollToExpand='Scroll to Expand & Explore'
-        textBlend={false}
-        useAnimatedShader={true}
-        use3DBackground={false}
-      >
-        <ShakthiSatContent />
-      </ScrollExpandMedia>
-    </div>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/partners" element={<Partners />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/advisors" element={<Advisors />} />
+          <Route path="/countries" element={<Countries />} />
+          <Route path="/devices" element={<Devices />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 
