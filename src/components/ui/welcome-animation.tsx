@@ -28,7 +28,7 @@ const WelcomeAnimation = ({ onComplete }: WelcomeAnimationProps) => {
   return (
     <AnimatePresence>
       <motion.div
-        className="fixed inset-0 z-50 bg-gradient-to-br from-purple-900 via-black to-teal-900 flex items-center justify-center overflow-hidden"
+        className="fixed inset-0 z-50 bg-gradient-to-br from-indigo-900 via-slate-900 to-cyan-900 flex items-center justify-center overflow-hidden"
         initial={{ opacity: 1 }}
         exit={{ opacity: 0, scale: 1.1 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
@@ -37,7 +37,7 @@ const WelcomeAnimation = ({ onComplete }: WelcomeAnimationProps) => {
         <div className="absolute inset-0">
           {/* Gradient Orbs */}
           <motion.div
-            className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"
+            className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/25 rounded-full blur-3xl"
             animate={{
               scale: [1, 1.2, 1],
               opacity: [0.3, 0.6, 0.3],
@@ -47,7 +47,7 @@ const WelcomeAnimation = ({ onComplete }: WelcomeAnimationProps) => {
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
           />
           <motion.div
-            className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-teal-500/20 rounded-full blur-3xl"
+            className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-emerald-500/25 rounded-full blur-3xl"
             animate={{
               scale: [1, 1.3, 1],
               opacity: [0.2, 0.5, 0.2],
@@ -98,8 +98,8 @@ const WelcomeAnimation = ({ onComplete }: WelcomeAnimationProps) => {
             ))}
             <defs>
               <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#a855f7" />
-                <stop offset="100%" stopColor="#14b8a6" />
+                <stop offset="0%" stopColor="#3b82f6" />
+                <stop offset="100%" stopColor="#10b981" />
               </linearGradient>
             </defs>
           </svg>
@@ -122,19 +122,19 @@ const WelcomeAnimation = ({ onComplete }: WelcomeAnimationProps) => {
             <div className="relative">
               {/* Outer Ring */}
               <motion.div
-                className="absolute inset-0 w-32 h-32 mx-auto rounded-full border-2 border-purple-400/50"
+                className="absolute inset-0 w-32 h-32 mx-auto rounded-full border-2 border-blue-400/60"
                 animate={{ rotate: 360 }}
                 transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
               />
               
               {/* Inner Glow */}
               <motion.div
-                className="w-24 h-24 mx-auto rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-teal-500 flex items-center justify-center shadow-2xl relative"
+                className="w-24 h-24 mx-auto rounded-full bg-gradient-to-r from-blue-500 via-indigo-500 to-emerald-500 flex items-center justify-center shadow-2xl relative"
                 animate={{
                   boxShadow: [
-                    "0 0 20px rgba(168, 85, 247, 0.5)",
-                    "0 0 40px rgba(168, 85, 247, 0.8)",
-                    "0 0 20px rgba(168, 85, 247, 0.5)",
+                    "0 0 20px rgba(59, 130, 246, 0.6)",
+                    "0 0 40px rgba(59, 130, 246, 0.9)",
+                    "0 0 20px rgba(59, 130, 246, 0.6)",
                   ],
                 }}
                 transition={{ duration: 2, repeat: Infinity }}
@@ -148,7 +148,7 @@ const WelcomeAnimation = ({ onComplete }: WelcomeAnimationProps) => {
                 
                 {/* Orbiting Elements */}
                 <motion.div
-                  className="absolute w-4 h-4 bg-teal-400 rounded-full"
+                  className="absolute w-4 h-4 bg-emerald-400 rounded-full"
                   animate={{
                     rotate: 360,
                     x: [20, 0, -20, 0, 20],
@@ -171,7 +171,7 @@ const WelcomeAnimation = ({ onComplete }: WelcomeAnimationProps) => {
                 transition={{ duration: 0.8, ease: "easeOut" }}
               >
                 <motion.h1
-                  className="text-5xl md:text-7xl font-bold text-transparent bg-gradient-to-r from-purple-400 via-pink-400 to-teal-300 bg-clip-text mb-2"
+                  className="text-5xl md:text-7xl font-bold text-transparent bg-gradient-to-r from-blue-400 via-indigo-400 to-emerald-300 bg-clip-text mb-2"
                   animate={{
                     backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
                   }}
@@ -183,7 +183,7 @@ const WelcomeAnimation = ({ onComplete }: WelcomeAnimationProps) => {
                 
                 {/* Underline Animation */}
                 <motion.div
-                  className="w-32 h-1 bg-gradient-to-r from-purple-500 to-teal-500 mx-auto rounded-full"
+                  className="w-32 h-1 bg-gradient-to-r from-blue-500 to-emerald-500 mx-auto rounded-full"
                   initial={{ width: 0 }}
                   animate={{ width: 128 }}
                   transition={{ duration: 1, delay: 0.5 }}
@@ -211,7 +211,7 @@ const WelcomeAnimation = ({ onComplete }: WelcomeAnimationProps) => {
                   Empowering Girls in Space
                 </motion.p>
                 <motion.p
-                  className="text-lg md:text-xl text-purple-200 mt-2"
+                  className="text-lg md:text-xl text-blue-200 mt-2"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.8, delay: 0.5 }}
@@ -233,11 +233,11 @@ const WelcomeAnimation = ({ onComplete }: WelcomeAnimationProps) => {
                 transition={{ duration: 0.5, ease: "easeOut" }}
               >
                 {[
-                  { Icon: Globe, color: "from-blue-400 to-teal-400", delay: 0 },
-                  { Icon: Sparkles, color: "from-purple-400 to-pink-400", delay: 0.2 },
-                  { Icon: Rocket, color: "from-orange-400 to-red-400", delay: 0.4 },
-                  { Icon: Star, color: "from-yellow-400 to-orange-400", delay: 0.6 },
-                  { Icon: Zap, color: "from-green-400 to-teal-400", delay: 0.8 },
+                  { Icon: Globe, color: "from-blue-400 to-cyan-400", delay: 0 },
+                  { Icon: Sparkles, color: "from-indigo-400 to-purple-400", delay: 0.2 },
+                  { Icon: Rocket, color: "from-emerald-400 to-teal-400", delay: 0.4 },
+                  { Icon: Star, color: "from-yellow-400 to-amber-400", delay: 0.6 },
+                  { Icon: Zap, color: "from-green-400 to-emerald-400", delay: 0.8 },
                 ].map(({ Icon, color, delay }, index) => (
                   <motion.div
                     key={index}
@@ -303,7 +303,7 @@ const WelcomeAnimation = ({ onComplete }: WelcomeAnimationProps) => {
           >
             <div className="w-64 h-2 bg-white/10 rounded-full overflow-hidden backdrop-blur-sm">
               <motion.div
-                className="h-full bg-gradient-to-r from-purple-500 via-pink-500 to-teal-500 rounded-full"
+                className="h-full bg-gradient-to-r from-blue-500 via-indigo-500 to-emerald-500 rounded-full"
                 initial={{ width: "0%" }}
                 animate={{ width: "100%" }}
                 transition={{ duration: 4, ease: "easeInOut" }}
