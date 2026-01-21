@@ -11,17 +11,14 @@ import Devices from './pages/Devices';
 
 function App() {
   const [showWelcome, setShowWelcome] = useState(true);
-  const [isAnimationComplete, setIsAnimationComplete] = useState(false);
 
   useEffect(() => {
     // Always show welcome animation on page load/refresh
     setShowWelcome(true);
-    setIsAnimationComplete(false);
   }, []);
 
   const handleAnimationComplete = () => {
     setShowWelcome(false);
-    setIsAnimationComplete(true);
   };
 
   if (showWelcome) {

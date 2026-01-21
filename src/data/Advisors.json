@@ -1,0 +1,211 @@
+[
+  {
+    "name": "Dr. Claire Nelson",
+    "image": "/img/Advisors/1.jpg",
+    "desc": "Dr. Claire Nelson, an esteemed engineer, is a leading advocate for space exploration and sustainability. Her innovative work has earned her prestigious awards, including recognition as a White House Champion of Change. Dr. Nelson's strategic foresight and dedication to advancing science make her a pioneering figure in the field, committed to shaping a better future for humanity through space exploration.",
+    "poster": "https://example.com/poster1"
+  },
+  {
+    "name": "Dr. Hashima Hasan",
+    "image": "/img/Advisors/2.jpg",
+    "desc": "Dr. Hashima Hasan, a Lucknow University graduate and AMU Physics gold medalist with an Oxford doctorate, is a Program Scientist at NASA Headquarters. Her research spans nuclear reactions, atmospheric visibility, Hubble optics, and barred galaxy stellar motions. She led major space telescopes, oversees NuSTAR and IXPE, earned distinguished awards, and inspires young women as a dedicated mother and grandmother today.",
+    "poster": "https://example.com/poster2"
+  },
+  {
+    "name": "Ms. Deborah Sass",
+    "image": "/img/Advisors/3.jpg",
+    "desc": "Seasoned entertainment executive and World Economic Forum member representing the Global Future Council on Space. Founding Partner of Space Hero, CEO and Founder of SpaceVerse, with experience at major UK and Australian media outlets and radio. Worked with digital clients like Amazon, iTunes, Shazam, Spotify. Specialist in fundraising, investor relations, brand identity, co-founded 500 Female Founders, angel investor and mentor.",
+    "poster": "https://example.com/poster3"
+  },
+  {
+    "name": "Ms. Yara Fernandes",
+    "image": "/img/Advisors/4.jpg",
+    "desc": "Yara J. Fernandes is helping to build Space & Quantum ecosystems worldwide through global collaboration on multicultural, interdisciplinary teams. She is a graduate of John Hopkins University, where she helped make a diplomacy curriculum. She was hired by a government in Northern Africa due to her experience in cross cultural communication. She frequently builds partnerships, teams, and collaboration opportunities including with leading international business development initiatives.",
+    "poster": "https://example.com/poster4"
+  },
+    {
+        "name": "Ms. Larissa Macko",
+        "image": "/img/Advisors/5.jpg",
+        "desc": "Larissa Macko, a Jamaican Indian first-generation American, has a background in biomedical sciences, massage therapy, and Traditional Chinese Medicine. After emergency room experience, she earned a Master’s in Oriental Medicine. She founded Girl Time Miami, represented her roots in Miss Global International, built a TCM chatbot, advances AI wellness apps, serves GPTuesday, and appears on Life Rescue TV show soon.",
+        "poster": "https://example.com/poster5"
+    },
+    {
+        "name": "Ms. Alma Okpalefe",
+        "image": "/img/Advisors/6.jpg",
+        "desc": "Alma Okpalefe is Executive Director of World Space Week Association, coordinating the biggest space event. With nearly two decades of satellite industry legal expertise, she began at Nigerian Communications Satellite as Legal Counsel and Company Secretary. She co-founded Isaiah’s Hope Foundation, improving healthcare for underserved communities, and advises healthtech company One2One Healthcare/RingMD, advancing innovative solutions across Africa and beyond today.",
+        "poster": "https://example.com/poster6"
+    },
+    {
+        "name": "Ms. Huma Siddiqui",
+        "image": "/img/Advisors/7.jpg",
+        "desc": "Huma Siddiqui is a seasoned senior journalist with over three decades covering Defence, Space, and External Affairs. Starting at Financial Express in 1993 and moving to FinancialExpress.com in 2018, she is a pioneering woman in defence reporting. A Miranda House and Delhi University graduate, she integrates economic diplomacy, covers Africa and Latin America, earns awards, writes, lectures, and enjoys travel.",
+        "poster": "https://example.com/poster7"
+    },
+    {
+        "name": "Ms. Jasmine",
+        "image": "/img/Advisors/8.jpg",
+        "desc": "Jasmine is a young professional set on developing her knowledge and skills across cybersecurity and quantum computing. After completing her undergraduate degree in Computer Science with a minor in Cybersecurity, she has developed a career in software development and cloud architecture. Her passion extends to a desire to see other young girls and women persue their own interests in STEM with confidence.",
+        "poster": "https://example.com/poster8"
+    },
+    {
+        "name": "Dr. Alka Kapur",
+        "image": "/img/Advisors/9.jpg",
+        "desc": "Dr. Alka Kapur, Principal of Modern Public School, Delhi, is an award-winning educator with 34+ years’ experience, 24 as Principal, transforming the school into a nationally recognized institution featured in Forbes India. She serves as CBSE Venue Director, Delhi Sahodaya President, contributes to SCERT curriculum, leads social initiatives, champions sustainability, and participates in international education programs and training initiatives globally.",
+        "poster": "https://example.com/poster9"
+    },
+    {
+        "name": "Ms. Meetu Puri",
+        "image": "/img/Advisors/10.jpg",
+        "desc": "Meetu Puri is a trailblazing entrepreneur and co-founder of TENOTT, a tile wall manufacturing company. She serves as National Joint Secretary of the Confederation of Women Entrepreneurs of India and former Uttar Pradesh chapter President. She drives economic freedom, leads training and skill programs, supports women entrepreneurs at major exhibitions, and inspires entrepreneurship through panels, mentorship, and networking initiatives today.",
+        "poster": "https://example.com/poster10"
+    },
+    {
+        "name": "Ms. Shruti Swaroop",
+        "image": "/img/Advisors/11.jpg",
+        "desc": "Shruti Swaroop is a global DEI and HR advisor and entrepreneur with two decades in HR consulting and C-suite coaching. She founded EMBRACE Consulting in 2019, supporting 550+ clients worldwide. A two-time TEDx speaker, award-winning author, and mentor, she co-founded International Inclusion Alliance, advancing frameworks, policies, awareness, and inclusive cultures empowering individuals and organizations across sectors and regions globally today.",
+        "poster": "https://example.com/poster11"
+    },
+    {
+        "name": "Mrs. Ganga Nidhi Agarwal",
+        "image": "/img/Advisors/12.jpg",
+        "desc": "Wing Commander Ganga Nidhi Agarwal, deputed to India’s Ministry of External Affairs as Officer on Special Duty, is National President of Women-Led Development Council at WICCI. She contributed as Under Secretary to India’s G20 Presidency, led high-altitude operations, VVIP security, advanced Digital Public Infrastructure, exports, FDI, diversity, POSH policies, earning top commendations including Ashoka Award and more for her service.",
+        "poster": "https://example.com/poster12"
+    },
+    {
+        "name": "Ms. Nia Leona Civil",
+        "image": "/img/Advisors/13.jpg",
+        "desc": "Nia Leona Civil is a multifaceted leader in creativity, education, advocacy, and empowerment. She leads GGLOW Education, connecting students with tutors and mentoring teachers using innovative methodologies as an educational engineer. Balancing Caribbean heritage and American upbringing, she is Miss Miami for Miss World, former Miss Universe US Virgin Islands titleholder, promotes rights, wellness, nature, and storytelling and lasting impact.",
+        "poster": "https://example.com/poster13"
+    },
+    {
+        "name": "Ms. Nishtha Kapoor",
+        "image": "/img/Advisors/14.jpg",
+        "desc": "Regional Director-APAC at Eutelsat-OneWeb, she works across Africa, the Middle East, and South East Asia, leading efforts to bridge the digital divide with innovative satellite technology. A seasoned satellite communications professional, she secures telco and ISP deals delivering LEO network services across Africa. Known for problem-solving, she excels in sales, operations, marketing, and brand building in telecom B2B and B2C.",
+        "poster": "https://example.com/poster14"
+    },
+    {
+        "name": "Ms. Alice Carruth",
+        "image": "/img/Advisors/15.jpg",
+        "desc": "Alice Carruth is producer of T-Minus Space Daily Podcast, blending media studies background from University of Westminster with passion for space communications. Former television producer, she translates complex engineering and spaceflight into engaging narratives. Respected for authenticity and accuracy, she inspires audiences, elevates science communication, and fosters wonder, becoming a leading voice connecting listeners to space exploration globally today forward.",
+        "poster": "https://example.com/poster15"
+    },
+    {
+        "name": "Mrs. Eswari Rao",
+        "image": "/img/Advisors/16.jpg",
+        "desc": "Eswari Rao is Vice President at an MNC in Bangalore with 26+ years industry experience, leading major projects. She chairs Women Engagement Committee at PMI South Asia and volunteers with PMI Bangalore for 17 years, advocating product and project management across sectors including defence, manufacturing, construction, oil and gas. She enjoys travel, meeting people, and family time at home too.",
+        "poster": "https://example.com/poster16"
+    },
+    {
+        "name": "Ms. Matsepo Mosoka",
+        "image": "/img/Advisors/17.jpg",
+        "desc": "Matsepo Mosoka is a Lesotho scientist and Acting Director at the Department of Science, Technology, and Innovation. She leads SADC research and innovation initiatives, hosting the SRIM II 2024 symposium to enhance research offices and promote women in STEM. She advances science and technology, advocates sustainable development, and mentors women and girls locally and internationally, empowering and inspiring future innovators.",
+        "poster": "https://example.com/poster17"
+    },
+    {
+        "name": "Ms. Sharon Idahosa",
+        "image": "/img/Advisors/18.jpg",
+        "desc": "Sharon Idahosa is a communications professional, podcast coach, and founder of Sharon Communications. She hosts HerStory Podcast and Let’s Talk Agriculture Podcast with over 100 episodes, collaborating with FAO, MEDA, FoodChain ID, and HarvestPlus. Passionate about helping women find their voices, she uses HerStory to amplify inspiring stories and connect with women worldwide through shared narratives and meaningful global engagement.",
+        "poster": "https://example.com/poster18"
+    },
+    {
+        "name": "Ms. Samantha Quarterman",
+        "image": "/img/Advisors/19.jpg",
+        "desc": "Samantha Quarterman is an advocate for youth and families with 20+ years transforming at-risk youth in South Florida. A Miami native, she founded MEYGA in 2001 to empower girls and later families, leading creation of a memorial park after Sherdavia Jenkins’ death. MEYGA now provides schooling, aftercare, senior meals, and food insecurity initiatives, uplifting Liberty City through community development efforts.",
+        "poster": "https://example.com/poster19"
+    },
+    {
+        "name": "Dr. Susan Villanueva-de Guzman",
+        "image": "/img/Advisors/20.jpg",
+        "desc": "Susan Villanueva-de Guzman is a seasoned design educator and artist with 30+ years in academia and industry. She specializes in graphic, packaging, and editorial design, holds BFA, MEd, and ABD PhD. She mentors award-winning students in global competitions like GCCSkills and WorldSkills, and exhibits internationally including EXPO 2020 Dubai, promoting creativity and cultural exchange through her influential artistic leadership globally.",
+        "poster": "https://example.com/poster20"
+    },
+    {
+        "name": "Dr. Aisha Alteneiji",
+        "image": "/img/Advisors/21.jpg",
+        "desc": "Aisha Alteneiji is an accomplished education leader with expertise in curriculum design, teacher training, and educational innovation. As the Division Chair of the Sharjah Faculty of Education at the Higher Colleges of Technology, she has over 10 years of experience in Early Childhood, Primary Education, and Teaching Practicum programs, she is ABD PhD in Information and Communication Technology. Recognized as an Associate Fellow by the Higher Education Academy, she is dedicated to fostering transformative learning experiences and advancing educational excellence.",
+        "poster": "https://example.com/poster21"
+    },
+    {
+        "name": "Ms. Rosso K. Dieng",
+        "image": "/img/Advisors/22.jpg",
+        "desc": "Rosso K. Dieng is a seasoned professional with nearly 20 years across digital technology, space, and education, with experience at Microsoft and Oracle. She is Director of Planning, Partnership, and Development at Senegalese Space Studies Agency, leads strategies, funding, ecosystem building, positions ASES globally, presides Tech4Change, bridges digital divide, angel invests, advocates STEM for girls in Africa and beyond today.",
+        "poster": "https://example.com/poster22"
+    },
+    {
+        "name": "Mrs. Gowri R",
+        "image": "/img/Advisors/23.jpg",
+        "desc": "Gowri R is Co-Founder and Managing Director of Spacynetix Pvt Ltd and a leading tech researcher in cybersecurity, talent, and systems management. With software engineering experience across startups to MNCs, she led enterprise research projects, coordinated government and non-government initiatives, produced research publications, and organized national and international events. She is also an organizational psychologist and cyber intervention officer too.",
+        "poster": "https://example.com/poster23"
+    },
+    {
+        "name": "Ms. Sharon McDougle",
+        "image": "/img/Advisors/24.jpg",
+        "desc": "Sharon McDougle is a retired spacesuit technician and first Black spacesuit technician and Crew Chief in NASA’s Space Shuttle CEE department. A former US Air Force Aerospace Physiology Specialist, she suited SR-71 and U-2 pilots and later suited Dr. Mae Jemison for Endeavour. Awarded the Silver Snoopy, she is now a motivational speaker, author, and STEM advocate inspiring youth globally.",
+        "poster": "https://example.com/poster24"
+    },
+    {
+        "name": "Ms. Nita Saint-Hilaire",
+        "image": "/img/Advisors/25.jpg",
+        "desc": "Nita Saint-Hilaire is a civic innovator and data transformation expert with two decades in technology, marketing, analytics. Founder of Qii Labs, Quantum Consortium of Haiti, Solcité Dev Group, Tchovi Foundation, she built resilient digital systems. Award-winning Regtech Sandbox creator, former EMTECH Head of Product, senior leader at IBM, Capgemini, IPG, WPP, she advances social innovation and tech inclusion initiatives globally.",
+        "poster": "https://example.com/poster25"
+    },
+    {
+        "name": "Ms. Kirti Sudhanshu",
+        "image": "/img/Advisors/26.jpg",
+        "desc": "Kirti Sudhanshu is a dynamic entrepreneur and humanitarian with 17 years industry expertise and nine years founding companies internationally. She builds world-class teams, drives growth and excels in fundraising and partnerships. Through Kirti’s Kare Foundation she empowers disadvantaged women and children with health, education, food, sports programs, earning global recognition, environmental awards and Rotary ambassador honors, community impact leadership today.",
+        "poster": "https://example.com/poster26"
+    },
+    {
+        "name": "Dr. Saranya Jaikumar",
+        "image": "/img/Advisors/27.jpg",
+        "desc": "Dr. Saranya T. Jaikumar is a pioneering Educational Psychologist, among India’s first doctorates in the field, Director of Northern Uni India, and expert for education ministries and agencies. Former Tamil Nadu Commission member, she advocates POCSO awareness, supports child and adolescent mental health, leads research, mentors exchange programs, speaks widely, and guides schools on safety, resilience, and development and growth.",
+        "poster": "https://example.com/poster27"
+    },
+    {
+        "name": "Ms. Emilee Gilbert",
+        "image": "/img/Advisors/28.jpg",
+        "desc": "Emilee is an Associate Professor and feminist sociologist at Western Sydney University, focusing on gender equity, women’s health, mothering, and work. An expert in qualitative methods, she ranks among the world’s top 2% scientists, influences global policy, lectures postgraduate research, supervises award-winning scholars, and is an elected member advancing equity and diversity in psychology and while shaping impactful international collaboration.",
+        "poster": "https://example.com/poster28"
+    },
+    {
+        "name": "Dr. Sridevi Arunachalam",
+        "image": "/img/Advisors/29.jpg",
+        "desc": "Sridevi Arunachalam is a dynamic entrepreneur, visionary leader, and passionate advocate for education, empowerment, and social change. With a diverse portfolio spanning multiple industries and a relentless commitment to excellence, Sridevi has made a significant impact on the global stage. Sridevi's entrepreneurial journey started at a young age when she founded her first venture, laying the foundation for a series of successful business endeavors. Over the years, she has demonstrated a keen eye for opportunity, innovative thinking, and a passion for making a difference in the world.",
+        "poster": "https://example.com/poster29"
+    },
+    {
+        "name": "Ms. Saroni Roy",
+        "image": "/img/Advisors/30.jpg",
+        "desc": "Saroni Roy is an Australian actor, producer, singer, and presenter championing DEI. She served as Co-chair Entertainment Diversity MEAA from 2020 to 2025 and is the first Indian-origin Australian woman elected Federal Councillor National Performers Committee. A cancer survivor and body activist, she was named influential, Ms India Australia Goodwill Ambassador, and leads Saroni Roy Foundation initiatives and impact globally.",
+        "poster": "https://example.com/poster30"
+    },
+    {
+        "name": "Ms. Yip ThyDiep Ta",
+        "image": "/img/Advisors/31.jpg",
+        "desc": "Yip ThyDiep Ta is an entrepreneur and thought leader at the intersection of technology, purpose, and systems innovation. As Founder and CEO of J3D.AI, she applies AI and Web3 to ethical impact ventures. Named among Top 100 Women in Web3, she created the Zebracorn model. An INSEAD MBA, she champions inclusive tech leadership through global initiatives and inspiring innovators worldwide.",
+        "poster": "https://example.com/poster31"
+    },
+    {
+        "name": "Ms. Melina Maghazehi",
+        "image": "/img/Advisors/32.jpg",
+        "desc": "Melina Maghazehi is an educator passionate about reimagining education for the 21st century. With experience teaching cybersecurity, digital skills, and personal development, she empowers youth through self-discovery and confidence. As founder of Schools for Purpose, she unites educators to design future-ready schools. Inspired by space and science, she works to make learning engaging and accessible for all students and communities worldwide.",
+        "poster": "https://example.com/poster32"
+    },
+    {
+        "name": "Dr. Rattan Virk",
+        "image": "/img/Advisors/33.jpg",
+        "desc": "Dr. Rattan Virk is an active leader and former Liberal candidate for Greenway with experience in medicine, occupational therapy, and trade. She holds an MBBS from Donetsk, completed residency in India, earned a Master of Occupational Therapy in Australia, co-chairs the India Australia Strategic Alliance, advances diplomacy, volunteers with the NSW Rural Fire Service, and applies a public health lens.",
+        "poster": "https://example.com/poster33"
+    },
+    {
+        "name": "Ms. Maria Militsopoulou",
+        "image": "/img/Advisors/34.jpg",
+        "desc": "Maria Militsopoulou is a globally recognised leader known for advancing resilient leadership, mental health and trauma awareness, innovation, and women’s empowerment. As founder of Women Empowerment Worldwide Leadership Organisation and CVO of YouDream Tech Hub, she has built a powerful international platform shaping future leaders and driving inclusive growth. She created the My-Dream Transformational Mentoring Platform, a neuroscience-grounded initiative helping leaders grow with resilience and purpose. Maria also serves on leading global bodies, including the WEF G100 Advisory Council, the Global Women Leaders Committee of WBAF, and as Senator for Cyprus at G20 WBAF. Her impact has earned worldwide recognition, including Woman of the Decade Changing the World and a place among the world’s visionary women leaders and top global female thought leaders.",
+        "poster": "https://example.com/poster34"
+    }
+
+
+
+
+ 
+]
