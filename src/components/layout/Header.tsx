@@ -12,7 +12,7 @@ const Header = () => {
     { name: 'About Us', path: '/about' },
     { name: 'Advisors', path: '/advisors' },
     { name: 'Countries', path: '/countries' },
-    { name: 'Devices', path: '/devices' },
+    { name: 'Devis', path: '/devices' },
   ];
 
   const isActive = (path: string) => {
