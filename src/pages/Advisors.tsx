@@ -1,4 +1,4 @@
-import advisorsData from "@/data/Advisors.json";
+import advisors from "@/data/Advisors.json";
 
 const Advisors = () => {
   return (
