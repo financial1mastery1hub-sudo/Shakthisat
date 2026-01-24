@@ -16,9 +16,9 @@ const advisorImages = import.meta.glob("../img/Advisors/*", {
 
 const resolveAdvisorImage = (image: string): string => {
   const cleaned = image
-    .replace(/^\/img\/Indicators\//i, "")
+    .replace(/^\/img\/Advisors\//i, "")
     .replace(/^\/advisors\//i, "")
-    .replace(/^\//, "");
+    .replace(/^\/, "");
 
   const key = `../img/Advisors/${cleaned}`;
   return (advisorImages[key] as string | undefined) ?? image;
@@ -33,7 +33,6 @@ const Advisors = () => {
   const [search, setSearch] = useState("");
   const [advisors, setAdvisors] = useState<Advisor[]>([]);
   const [modalIndex, setModalIndex] = useState<number | null>(null);
-  const [page] = useState(1);
 
   useEffect(() => {
     setAdvisors(advisorsData as Advisor[]);
@@ -135,7 +134,7 @@ const Advisors = () => {
       {/* Modal matching Devices style */}
       {modalIndex !== null && filteredAdvisors[modalIndex] && (
         <div className="fixed inset-0 bg-black/70 backdrop-blur-md flex items-center justify-center z-50 p-4" onClick={closeModal}>
-          <div className="bg-black border border-white/10 text-white rounded-2xl max-w-2xl w-full p-6 relative shadow-xl" onClick={(e) => e.stopPropagation()}>
+          <div className="bg-black border border-white/10 text-white rounded-2xl max-w-2xl w-full p-6 relative shadow-xl" onClick={(e) => e.stopPropagation()}>  
             <button onClick={closeModal} className="absolute top-4 right-4 text-white/60 hover:text-white transition" aria-label="Close advisor details">×</button>
 
             <div className="w-full h-[55vh] sm:h-[500px] overflow-y-auto">
