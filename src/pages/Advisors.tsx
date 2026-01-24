@@ -18,7 +18,7 @@ const resolveAdvisorImage = (image: string): string => {
   const cleaned = image
     .replace(/^\/img\/Advisors\//i, "")
     .replace(/^\/advisors\//i, "")
-    .replace(/^\/, "");
+    .replace(/^/, "");
 
   const key = `../img/Advisors/${cleaned}`;
   return (advisorImages[key] as string | undefined) ?? image;
