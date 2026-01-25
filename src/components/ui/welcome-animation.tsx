@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Rocket, Globe, Sparkles, Zap, Star, Satellite } from 'lucide-react';
 
 interface WelcomeAnimationProps {
   onComplete: () => void;
@@ -10,196 +9,114 @@ const WelcomeAnimation = ({ onComplete }: WelcomeAnimationProps) => {
   const [currentStep, setCurrentStep] = useState(0);
 
   useEffect(() => {
-    const timer1 = setTimeout(() => setCurrentStep(1), 800);
-    const timer2 = setTimeout(() => setCurrentStep(2), 1800);
-    const timer3 = setTimeout(() => setCurrentStep(3), 2800);
-    const timer4 = setTimeout(() => setCurrentStep(4), 3500);
-    const timer5 = setTimeout(() => onComplete(), 4200);
+    const timer1 = setTimeout(() => setCurrentStep(1), 1000);
+    const timer2 = setTimeout(() => setCurrentStep(2), 2000);
+    const timer3 = setTimeout(() => onComplete(), 3500);
 
     return () => {
       clearTimeout(timer1);
       clearTimeout(timer2);
       clearTimeout(timer3);
-      clearTimeout(timer4);
-      clearTimeout(timer5);
     };
   }, [onComplete]);
 
   return (
     <AnimatePresence>
       <motion.div
-        className="fixed inset-0 z-50 bg-gradient-to-br from-indigo-900 via-slate-900 to-cyan-900 flex items-center justify-center overflow-hidden"
+        className="fixed inset-0 z-50 bg-black flex items-center justify-center overflow-hidden"
         initial={{ opacity: 1 }}
-        exit={{ opacity: 0, scale: 1.1 }}
+        exit={{ opacity: 0 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
       >
-        {/* Animated Background Elements */}
-        <div className="absolute inset-0">
-          {/* Gradient Orbs */}
-          <motion.div
-            className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/25 rounded-full blur-3xl"
-            animate={{
-              scale: [1, 1.2, 1],
-              opacity: [0.3, 0.6, 0.3],
-              x: [0, 50, 0],
-              y: [0, -30, 0],
-            }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+        {/* Subtle Background Pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0" 
+               style={{
+                 backgroundImage: `radial-gradient(circle at 25% 25%, #ffffff 1px, transparent 1px),
+                                  radial-gradient(circle at 75% 75%, #ffffff 1px, transparent 1px)`,
+                 backgroundSize: '50px 50px'
+               }} 
           />
-          <motion.div
-            className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-emerald-500/25 rounded-full blur-3xl"
-            animate={{
-              scale: [1, 1.3, 1],
-              opacity: [0.2, 0.5, 0.2],
-              x: [0, -40, 0],
-              y: [0, 20, 0],
-            }}
-            transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-          />
-
-          {/* Floating Particles */}
-          {[...Array(30)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute w-1 h-1 bg-white rounded-full"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-              }}
-              animate={{
-                opacity: [0, 1, 0],
-                scale: [0, 1.5, 0],
-                y: [0, -100, -200],
-              }}
-              transition={{
-                duration: 3 + Math.random() * 2,
-                repeat: Infinity,
-                delay: Math.random() * 3,
-                ease: "easeOut",
-              }}
-            />
-          ))}
-
-          {/* Constellation Lines */}
-          <svg className="absolute inset-0 w-full h-full opacity-30">
-            {[...Array(8)].map((_, i) => (
-              <motion.line
-                key={i}
-                x1={`${20 + i * 10}%`}
-                y1={`${30 + i * 5}%`}
-                x2={`${30 + i * 8}%`}
-                y2={`${40 + i * 7}%`}
-                stroke="url(#gradient)"
-                strokeWidth="1"
-                initial={{ pathLength: 0, opacity: 0 }}
-                animate={{ pathLength: 1, opacity: 0.6 }}
-                transition={{ duration: 2, delay: i * 0.2 }}
-              />
-            ))}
-            <defs>
-              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#3b82f6" />
-                <stop offset="100%" stopColor="#10b981" />
-              </linearGradient>
-            </defs>
-          </svg>
         </div>
 
         {/* Main Content */}
         <div className="relative z-10 text-center">
           {/* Logo Animation */}
           <motion.div
-            className="mb-12"
-            initial={{ scale: 0, rotate: -360, y: 100 }}
-            animate={{ scale: 1, rotate: 0, y: 0 }}
+            className="mb-8"
+            initial={{ scale: 0.3, opacity: 0, y: 50 }}
+            animate={{ scale: 1, opacity: 1, y: 0 }}
             transition={{ 
               type: "spring", 
-              stiffness: 200, 
-              damping: 15,
-              duration: 1.2 
+              stiffness: 100, 
+              damping: 20,
+              duration: 1.5 
             }}
           >
-            <div className="relative w-48 h-48 mx-auto">
-              {/* Logo Image */}
+            <motion.div
+              className="relative w-80 h-80 mx-auto"
+              animate={{
+                y: [0, -10, 0],
+              }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            >
               <motion.img
                 src="https://raw.githubusercontent.com/financial1mastery1hub-sudo/Shakthisat/main/src/img/shakthisat1.png"
                 alt="ShakthiSAT Logo"
                 className="w-full h-full object-contain"
+                initial={{ filter: "brightness(0.7)" }}
                 animate={{
                   filter: [
-                    "drop-shadow(0 0 20px rgba(59, 130, 246, 0.6))",
-                    "drop-shadow(0 0 40px rgba(59, 130, 246, 0.9))",
-                    "drop-shadow(0 0 20px rgba(59, 130, 246, 0.6))",
+                    "brightness(0.7) drop-shadow(0 0 20px rgba(255, 255, 255, 0.3))",
+                    "brightness(1) drop-shadow(0 0 40px rgba(255, 255, 255, 0.5))",
+                    "brightness(0.7) drop-shadow(0 0 20px rgba(255, 255, 255, 0.3))",
                   ],
                 }}
-                transition={{ duration: 2, repeat: Infinity }}
-              />
-              
-              {/* Outer Ring */}
-              <motion.div
-                className="absolute inset-0 w-full h-full rounded-full border-2 border-blue-400/40"
-                animate={{ rotate: 360 }}
-                transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-              />
-              
-              {/* Orbiting Elements */}
-              <motion.div
-                className="absolute w-4 h-4 bg-emerald-400 rounded-full top-1/2 left-1/2"
-                style={{ transformOrigin: '0 0' }}
-                animate={{
-                  rotate: 360,
-                  x: [30, 0, -30, 0, 30],
-                  y: [0, -30, 0, 30, 0],
+                transition={{ 
+                  duration: 3, 
+                  repeat: Infinity,
+                  ease: "easeInOut"
                 }}
-                transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
               />
-            </div>
+            </motion.div>
           </motion.div>
-
-          {/* Title Animation - Hidden since logo contains text */}
-          <AnimatePresence mode="wait">
-            {currentStep >= 1 && (
-              <motion.div
-                className="mb-6"
-                initial={{ opacity: 0, y: 50, scale: 0.8 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                exit={{ opacity: 0, y: -50, scale: 1.1 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-              >
-                {/* Decorative Underline Animation */}
-                <motion.div
-                  className="w-32 h-1 bg-gradient-to-r from-blue-500 to-emerald-500 mx-auto rounded-full"
-                  initial={{ width: 0 }}
-                  animate={{ width: 128 }}
-                  transition={{ duration: 1, delay: 0.5 }}
-                />
-              </motion.div>
-            )}
-          </AnimatePresence>
 
           {/* Subtitle Animation */}
           <AnimatePresence mode="wait">
-            {currentStep >= 2 && (
+            {currentStep >= 1 && (
               <motion.div
                 className="mb-12"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -30 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
               >
                 <motion.p
-                  className="text-xl md:text-3xl text-white/90 font-light"
-                  initial={{ letterSpacing: "0.5em", opacity: 0 }}
+                  className="text-2xl md:text-3xl text-silver font-light tracking-wide"
+                  style={{ color: '#C0C0C0' }}
+                  initial={{ letterSpacing: "0.3em", opacity: 0 }}
                   animate={{ letterSpacing: "0.1em", opacity: 1 }}
-                  transition={{ duration: 1 }}
+                  transition={{ duration: 1.2 }}
                 >
                   Empowering Girls in Space
                 </motion.p>
+                <motion.div
+                  className="w-32 h-0.5 bg-gradient-to-r from-transparent via-silver to-transparent mx-auto mt-4"
+                  style={{ background: 'linear-gradient(90deg, transparent, #C0C0C0, transparent)' }}
+                  initial={{ width: 0 }}
+                  animate={{ width: 128 }}
+                  transition={{ duration: 1, delay: 0.5 }}
+                />
                 <motion.p
-                  className="text-lg md:text-xl text-blue-200 mt-2"
+                  className="text-lg md:text-xl mt-4"
+                  style={{ color: '#A0A0A0' }}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 0.8, delay: 0.5 }}
+                  transition={{ duration: 0.8, delay: 0.8 }}
                 >
                   12,000 Girls • 108 Countries • ∞ Possibilities
                 </motion.p>
@@ -207,146 +124,61 @@ const WelcomeAnimation = ({ onComplete }: WelcomeAnimationProps) => {
             )}
           </AnimatePresence>
 
-          {/* Icons Animation */}
+          {/* Loading Section */}
           <AnimatePresence mode="wait">
-            {currentStep >= 3 && (
+            {currentStep >= 2 && (
               <motion.div
-                className="flex justify-center space-x-8 mb-12"
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.5 }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
-              >
-                {[
-                  { Icon: Globe, color: "from-blue-400 to-cyan-400", delay: 0 },
-                  { Icon: Sparkles, color: "from-indigo-400 to-purple-400", delay: 0.2 },
-                  { Icon: Rocket, color: "from-emerald-400 to-teal-400", delay: 0.4 },
-                  { Icon: Star, color: "from-yellow-400 to-amber-400", delay: 0.6 },
-                  { Icon: Zap, color: "from-green-400 to-emerald-400", delay: 0.8 },
-                ].map(({ Icon, color, delay }, index) => (
-                  <motion.div
-                    key={index}
-                    className={`w-16 h-16 rounded-full bg-gradient-to-br ${color} flex items-center justify-center shadow-lg`}
-                    initial={{ y: 100, opacity: 0, rotate: -180 }}
-                    animate={{ y: 0, opacity: 1, rotate: 0 }}
-                    transition={{
-                      type: "spring",
-                      stiffness: 200,
-                      damping: 10,
-                      delay,
-                    }}
-                    whileHover={{ scale: 1.1 }}
-                  >
-                    <motion.div
-                      animate={{ 
-                        y: [0, -8, 0],
-                        rotate: [0, 5, -5, 0],
-                      }}
-                      transition={{ 
-                        duration: 2, 
-                        repeat: Infinity, 
-                        delay: delay + 1,
-                        ease: "easeInOut" 
-                      }}
-                    >
-                      <Icon className="w-8 h-8 text-white" />
-                    </motion.div>
-                  </motion.div>
-                ))}
-              </motion.div>
-            )}
-          </AnimatePresence>
-
-          {/* Mission Statement */}
-          <AnimatePresence mode="wait">
-            {currentStep >= 4 && (
-              <motion.div
-                className="max-w-2xl mx-auto"
+                className="absolute bottom-16 left-1/2 transform -translate-x-1/2 w-80"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.6 }}
               >
-                <motion.p
-                  className="text-lg text-white/80 leading-relaxed"
+                {/* Silver Loading Bar */}
+                <div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden backdrop-blur-sm border border-gray-700">
+                  <motion.div
+                    className="h-full rounded-full"
+                    style={{
+                      background: "linear-gradient(90deg, #808080 0%, #C0C0C0 25%, #E8E8E8 50%, #C0C0C0 75%, #808080 100%)",
+                      boxShadow: "0 0 10px rgba(192, 192, 192, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.2)"
+                    }}
+                    initial={{ width: "0%" }}
+                    animate={{ width: "100%" }}
+                    transition={{ duration: 1.5, ease: "easeInOut" }}
+                  />
+                </div>
+                
+                {/* Loading Text */}
+                <motion.div
+                  className="flex justify-between items-center mt-3 text-xs"
+                  style={{ color: '#A0A0A0' }}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 1, delay: 0.3 }}
+                  transition={{ delay: 0.3 }}
                 >
-                  "Together, we explore the cosmos, break down barriers, and rise as the next generation of space leaders."
-                </motion.p>
+                  <span>0%</span>
+                  <motion.span
+                    animate={{ opacity: [0.5, 1, 0.5] }}
+                    transition={{ duration: 2, repeat: Infinity }}
+                    className="font-light tracking-wider"
+                  >
+                    Initializing Mission...
+                  </motion.span>
+                  <span>100%</span>
+                </motion.div>
               </motion.div>
             )}
           </AnimatePresence>
 
-          {/* Loading Indicator */}
+          {/* Subtle Glow Effect */}
           <motion.div
-            className="absolute bottom-16 left-1/2 transform -translate-x-1/2"
+            className="absolute inset-0 pointer-events-none"
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
+            animate={{ opacity: [0, 0.1, 0] }}
+            transition={{ duration: 4, repeat: Infinity }}
           >
-            <div className="w-64 h-3 bg-white/10 rounded-full overflow-hidden backdrop-blur-sm border border-white/20">
-              <motion.div
-                className="h-full bg-gradient-to-r from-gray-300 via-gray-100 to-gray-300 rounded-full shadow-lg"
-                style={{
-                  background: "linear-gradient(90deg, #C0C0C0 0%, #E8E8E8 25%, #F5F5F5 50%, #E8E8E8 75%, #C0C0C0 100%)",
-                  boxShadow: "0 0 10px rgba(192, 192, 192, 0.5), inset 0 1px 2px rgba(255, 255, 255, 0.3)"
-                }}
-                initial={{ width: "0%" }}
-                animate={{ width: "100%" }}
-                transition={{ duration: 4, ease: "easeInOut" }}
-              />
-            </div>
-            <motion.div
-              className="flex justify-between items-center mt-2 text-xs text-white/60"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1.5 }}
-            >
-              <span>0%</span>
-              <motion.span
-                animate={{ opacity: [0.5, 1, 0.5] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              >
-                Loading...
-              </motion.span>
-              <span>100%</span>
-            </motion.div>
-            <motion.p
-              className="text-white/60 text-sm mt-2 font-light tracking-wider"
-              animate={{ opacity: [0.5, 1, 0.5] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            >
-              Initializing Mission Control...
-            </motion.p>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white rounded-full blur-3xl opacity-5" />
           </motion.div>
         </div>
-
-        {/* Shooting Stars */}
-        {[...Array(5)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1 h-20 bg-gradient-to-b from-white to-transparent"
-            style={{
-              left: `${20 + i * 20}%`,
-              top: `${10 + i * 15}%`,
-              transform: 'rotate(45deg)',
-            }}
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ 
-              opacity: [0, 1, 0], 
-              scale: [0, 1, 0],
-              x: [0, 200],
-              y: [0, 200],
-            }}
-            transition={{
-              duration: 1.5,
-              delay: 2 + i * 0.3,
-              ease: "easeOut",
-            }}
-          />
-        ))}
       </motion.div>
     </AnimatePresence>
   );
