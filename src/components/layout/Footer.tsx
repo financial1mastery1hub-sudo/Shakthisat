@@ -21,7 +21,8 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className='flex flex-grow justify-center sm:justify-start'>
-                <img src="src/img/shakthisat.png" className='max-w-64' alt="" />
+                <img src="https://raw.githubusercontent.com/financial1mastery1hub-sudo/Shakthisat/main/src/img/shakthisat.png" className="w-1/2" alt="ShakthiSat" />
+
               </div>
             </div>
             <p className="text-white/70 text-sm leading-relaxed mb-6">
