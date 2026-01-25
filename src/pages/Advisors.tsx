@@ -1,11 +1,13 @@
 import { useEffect, useMemo, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { X } from "lucide-react";
 import advisorsData from "@/data/Advisors.json";
 
 type Advisor = {
   name: string;
-  desc: string;
   image: string;
-  poster?: string;
+  desc: string;
+  poster: string;
 };
 
 const advisorImages = import.meta.glob("../img/Advisors/*", {
@@ -17,28 +19,20 @@ const advisorImages = import.meta.glob("../img/Advisors/*", {
 const resolveAdvisorImage = (image: string): string => {
   const cleaned = image
     .replace(/^\/?img\/?Advisors\//i, "")
-    .replace(/^\/?advisors\//i, "")
+    .replace(/^\/?images\//i, "")
     .replace(/^\//, "");
 
   const key = `../img/Advisors/${cleaned}`;
   return (advisorImages[key] as string | undefined) ?? image;
 };
 
-const truncateText = (text: string, limit: number): string => {
-  if (text.length <= limit) return text;
-  return `${text.slice(0, limit).trimEnd()}...`;
-};
-
 const Advisors = () => {
   const [search, setSearch] = useState("");
-  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
-  const [modalIndex, setModalIndex] = useState<number | null>(null);
+  const [selected, setSelected] = useState<Advisor | null>(null);
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    return () => {
-      document.body.style.removeProperty("overflow");
-    };
   }, []);
 
   const advisors = useMemo(
@@ -47,146 +41,186 @@ const Advisors = () => {
         ...advisor,
         image: resolveAdvisorImage(advisor.image),
       })),
-    [],
+    []
   );
 
-  const filteredAdvisors = useMemo(
-    () =>
-      advisors.filter((advisor) =>
-        advisor.name.toLowerCase().includes(search.toLowerCase()),
-      ),
-    [search, advisors],
-  );
+  const filtered = useMemo(() => {
+    const term = search.toLowerCase();
+    return advisors.filter((advisor) =>
+      advisor.name.toLowerCase().includes(term)
+    );
+  }, [advisors, search]);
+
+  const perPage = 6;
+  const totalPages = Math.max(1, Math.ceil(filtered.length / perPage));
 
   useEffect(() => {
-    if (modalIndex !== null && modalIndex >= filteredAdvisors.length) {
-      setModalIndex(null);
-      document.body.style.removeProperty("overflow");
-    }
-  }, [filteredAdvisors.length, modalIndex]);
+    setPage(1);
+  }, [search]);
 
-  const openModal = (index: number) => {
-    setModalIndex(index);
-    document.body.style.overflow = "hidden";
-  };
+  useEffect(() => {
+    if (page > totalPages) setPage(totalPages);
+  }, [page, totalPages]);
 
-  const closeModal = () => {
-    setModalIndex(null);
-    document.body.style.removeProperty("overflow");
-  };
+  const paginated = useMemo(
+    () => filtered.slice((page - 1) * perPage, page * perPage),
+    [filtered, page]
+  );
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#0A0E27] via-[#1a1f3a] to-[#0A0E27] pt-24 pb-16 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-        <div className="border-2 border-white/30 rounded-xl p-6 sm:p-8 shadow-xl shadow-[#6A4FC8]/10">
-          <div className="text-center mb-10">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-[#FFD700] via-[#FF6EC7] to-[#6A4FC8] bg-clip-text text-transparent">
-              Our Advisors
-            </h1>
-            <p className="text-[#C0C0C0] max-w-2xl mx-auto">
-              Explore the leaders guiding ShakthiSAT with experience across space,
-              innovation, policy, and education.
-            </p>
+    <main className="relative min-h-screen bg-black text-white overflow-hidden">
+      {/* Background glows */}
+      <div className="pointer-events-none absolute inset-0 opacity-40">
+        <div className="absolute -top-40 -left-32 h-96 w-96 rounded-full bg-purple-700 blur-[120px]" />
+        <div className="absolute top-20 right-0 h-96 w-96 rounded-full bg-teal-500 blur-[140px]" />
+        <div className="absolute bottom-0 left-1/2 h-80 w-80 -translate-x-1/2 rounded-full bg-fuchsia-500 blur-[160px]" />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20">
+        {/* Header */}
+        <div className="text-center space-y-6 mb-12">
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs uppercase tracking-[0.24em] text-purple-200">
+            Advisors
+          </span>
+
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-300 via-teal-200 to-purple-100 bg-clip-text text-transparent drop-shadow-lg">
+            ShakthiSAT Advisors
+          </h1>
+
+          <p className="text-lg text-white/70 max-w-3xl mx-auto">
+            Meet the mentors guiding the next generation of global changemakers.
+          </p>
+
+          <div className="w-24 h-1 mx-auto bg-gradient-to-r from-purple-500 via-fuchsia-400 to-teal-400 rounded-full" />
+        </div>
+
+        {/* Search */}
+        <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-[0_30px_100px_-45px_rgba(0,0,0,0.8)] p-6 sm:p-8">
+          <div className="mb-10">
+            <div className="flex justify-center">
+              <input
+                type="text"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="Search advisors..."
+                className="w-full max-w-md px-4 py-2 rounded-full bg-black/40 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-teal-300/50 focus:ring-1 focus:ring-teal-400/20 transition"
+              />
+            </div>
           </div>
 
-          <div className="mb-10 max-w-md mx-auto">
-            <input
-              type="text"
-              placeholder="Search advisors by name..."
-              className="w-full px-4 py-3 rounded-lg bg-[#12152e] text-white border border-[#383c6b] focus:outline-none focus:border-[#6A4FC8]"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-            />
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {filteredAdvisors.map((advisor, index) => {
-              const isExpanded = expandedIndex === index;
-              const preview = isExpanded
-                ? advisor.desc
-                : truncateText(advisor.desc, 240);
-
-              return (
-                <div
-                  key={advisor.name}
-                  className="flex flex-col md:flex-row gap-6 bg-[#12152e] rounded-xl p-6 shadow-lg hover:shadow-[#6A4FC8]/40 transition duration-200"
-                >
-                  <div className="w-full md:w-1/3 h-72 md:h-48 rounded-lg overflow-hidden border border-white/10">
+          {/* Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
+            {paginated.map((advisor, index) => (
+              <motion.div
+                key={`${advisor.name}-${index}`}
+                whileHover={{ y: -4 }}
+                className="relative group"
+              >
+                <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-purple-600/20 via-fuchsia-500/10 to-teal-400/20" />
+                <div className="relative bg-black/40 p-6 rounded-2xl border border-white/10 shadow-lg group-hover:border-teal-300/40 transition-colors duration-300 h-full flex flex-col">
+                  {/* Image */}
+                  <div className="relative mx-auto w-48 h-48 rounded-2xl border border-white/20 overflow-hidden bg-black/60 mb-6">
                     <img
                       src={advisor.image}
                       alt={advisor.name}
-                      className="h-full w-full object-cover"
+                      className="object-cover w-full h-full"
                       loading="lazy"
                     />
                   </div>
 
-                  <div className="flex flex-col justify-center w-full md:w-2/3 text-center md:text-left">
-                    <h3 className="text-2xl font-bold text-[#FFD700] mb-3">
-                      {advisor.name}
-                    </h3>
+                  <h3 className="text-xl font-semibold text-center mb-auto text-white">
+                    {advisor.name}
+                  </h3>
 
-                    <p className="text-sm text-[#C0C0C0] leading-relaxed">{preview}</p>
-
-                    {advisor.desc.length > 240 && (
-                      <button
-                        type="button"
-                        className="mt-2 text-[#FF6EC7] text-xs font-semibold underline hover:text-[#FFD700] transition"
-                        onClick={() =>
-                          setExpandedIndex(isExpanded ? null : index)
-                        }
-                      >
-                        {isExpanded ? "Read Less" : "Read More"}
-                      </button>
-                    )}
-
+                  <div className="flex justify-center mt-6">
                     <button
-                      type="button"
-                      onClick={() => openModal(index)}
-                      className="mt-4 inline-block px-4 py-2 rounded-md bg-[#6A4FC8] text-white font-semibold hover:bg-[#8d6bff] transition"
+                      onClick={() => setSelected(advisor)}
+                      className="px-6 py-2 bg-gradient-to-r from-purple-500 to-teal-400 rounded-full text-white font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition"
                     >
-                      About
+                      Know More
                     </button>
                   </div>
                 </div>
-              );
-            })}
+              </motion.div>
+            ))}
           </div>
+
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <div className="flex justify-center space-x-4 border-t border-white/10 pt-6">
+              <button
+                onClick={() => setPage((p) => Math.max(p - 1, 1))}
+                disabled={page === 1}
+                className="px-4 py-2 bg-white/5 border border-white/20 text-white rounded-full hover:border-teal-300/50 hover:bg-white/10 disabled:opacity-40 transition"
+              >
+                Prev
+              </button>
+              <span className="px-4 py-2 text-white/70">
+                {page} / {totalPages}
+              </span>
+              <button
+                onClick={() => setPage((p) => Math.min(p + 1, totalPages))}
+                disabled={page === totalPages}
+                className="px-4 py-2 bg-white/5 border border-white/20 text-white rounded-full hover:border-teal-300/50 hover:bg-white/10 disabled:opacity-40 transition"
+              >
+                Next
+              </button>
+            </div>
+          )}
         </div>
       </div>
 
-      {modalIndex !== null && filteredAdvisors[modalIndex] && (
-        <div
-          className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 px-4"
-          onClick={closeModal}
-        >
-          <div
-            className="relative bg-[#12152e] rounded-xl border border-[#6A4FC8]/40 max-w-2xl w-full max-h-[80vh] overflow-hidden"
-            onClick={(e) => e.stopPropagation()}
+      {/* Modal */}
+      <AnimatePresence>
+        {selected && (
+          <motion.div
+            className="fixed inset-0 bg-black/70 backdrop-blur-md flex items-center justify-center z-50 p-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
           >
-            <button
-              type="button"
-              onClick={closeModal}
-              className="absolute top-2 right-3 text-white text-3xl"
-              aria-label="Close advisor details"
+            <motion.div
+              className="bg-black border border-white/10 text-white rounded-2xl max-w-lg w-full p-6 relative shadow-xl"
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.8 }}
             >
-              ×
-            </button>
+              <button
+                onClick={() => setSelected(null)}
+                className="absolute top-4 right-4 text-white/60 hover:text-white transition"
+              >
+                <X className="h-6 w-6" />
+              </button>
 
-            <div className="relative w-full h-[55vh] sm:h-[500px] overflow-y-auto">
-              <img
-                src={
-                  filteredAdvisors[modalIndex].poster
-                    ? filteredAdvisors[modalIndex].poster
-                    : filteredAdvisors[modalIndex].image
-                }
-                alt={filteredAdvisors[modalIndex].name}
-                className="object-contain w-full h-full rounded-md"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-      )}
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-24 h-24 rounded-lg overflow-hidden border border-white/20 flex-shrink-0">
+                  <img
+                    src={selected.image}
+                    alt={selected.name}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+
+                <h2 className="text-2xl font-bold text-white">{selected.name}</h2>
+              </div>
+
+              <p className="text-white/80 leading-relaxed whitespace-pre-line">
+                {selected.desc}
+              </p>
+
+              {selected.poster && (
+                <a
+                  href={selected.poster}
+                  target="_blank"
+                  className="inline-block mt-4 text-teal-300 underline"
+                >
+                  View Poster
+                </a>
+              )}
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </main>
   );
 };
