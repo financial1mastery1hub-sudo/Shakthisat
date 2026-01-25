@@ -27,6 +27,7 @@ const Home = () => {
     <div className='min-h-screen bg-black overflow-x-hidden'>
       <ScrollExpandMedia
         mediaType='video'
+        bgImageSrc="/img/shakthisat.png"
         mediaSrc="https://raw.githubusercontent.com/financial1mastery1hub-sudo/Shakthisat/main/src/img/video.mp4"
         title='ShakthiSAT Mission'
         date='Global Space Initiative'
