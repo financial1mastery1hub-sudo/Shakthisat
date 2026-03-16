@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Globe, Mail, MapPin, Phone } from 'lucide-react';
-import RazorpayButton from '../ui/donation-button';
+import DonationButton from '../ui/donation-button';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -98,7 +98,7 @@ const Footer = () => {
 
               {/* Donation Button */}
               <div className='pt-5'>
-                <RazorpayButton/>
+                <DonationButton />
               </div>
             </div>
           </div>
