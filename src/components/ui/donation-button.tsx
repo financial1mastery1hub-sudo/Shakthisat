@@ -6,7 +6,7 @@ const DonationButton: React.FC = () => {
       type="button"
       className="inline-flex items-center gap-3 rounded-md bg-blue-950 px-4 py-6 text-white shadow-lg shadow-black/40 transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
       onClick={() => {
-        window.location.href = "https://shakthisat-global.vercel.app";
+        window.location.href = "https://shakthisat.org";
       }}
     >
       <svg
