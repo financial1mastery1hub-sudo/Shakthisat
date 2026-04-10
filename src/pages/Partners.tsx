@@ -50,6 +50,12 @@ const Partners = () => {
         { id: 18, name: "STEM Queens", logo: "stem-queens-logo.jpg" },
         { id: 19, name: "MT Energy Resources", logo: "mt-energy-resources-logo.jpg" },
         { id: 20, name: "Atmanirbhar Bharat", logo: "atmanirbhar-bharat-logo.jpg" },
+        { id: 21, name: "AIMERS Foundation", logo: "AIMERS_simple_logo.png" },
+        { id: 22, name: "Humax Corp", logo: "IMG_4936.JPG" },
+        { id: 23, name: "Desi Australia", logo: "Desi Australia Logo.png" },
+        { id: 24, name: "MAWF", logo: "MAWF.jpeg" },
+        { id: 25, name: "World Femme Parliament", logo: "World Femme Parliament.PNG" },
+        { id: 26, name: "M-Aashiyana Welfare Foundation", logo: "WhatsApp_Image_2026-04-06_at_14.29.24.jpeg" },
       ].map((partner) => ({ ...partner, logo: resolvePartnerLogo(partner.logo) })),
     [],
   );
