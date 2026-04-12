@@ -112,6 +112,12 @@ const Footer = () => {
           </p>
 
           <div className="flex items-center space-x-6 mt-4 md:mt-0">
+            <a href='fluxstudio.in'>
+              <span className="text-white/60 text-sm">
+                Developed by FLUX STUDIO
+              </span>
+            </a>
+            <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-teal-500"></div>
             <span className="text-white/60 text-sm">Empowering Girls in Space</span>
             <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-teal-500"></div>
             <span className="text-white/60 text-sm">Global STEM Initiative</span>
