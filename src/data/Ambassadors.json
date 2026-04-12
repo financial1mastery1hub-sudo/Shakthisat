@@ -1,4 +1,29 @@
-[
+[ 
+  {
+    "name": "Ms. Yeshey Choden",
+    "image": "/img/Ambassadors/Yeshey.jpeg",
+    "ambassadorRole": "Ambassador",
+    "about": "Yeshey Choden is a Bhutanese space science professional, STEM educator, and social entrepreneur at the GovTech Agency, contributing to Bhutan's satellite development, remote sensing, and capacity building initiatives. She founded Dopeluin STEM Bhutan and the Bhutan Astronomical Society, driving STEM education, astronomy outreach, astro-tourism, and immersive STEM camps. Passionate about national service, she champions youth-led and enterprise-driven STEM initiatives — empowering young people, especially women, to innovate and shape Bhutan's future."
+  },
+  {
+    "name": "Ms. Rowida Kamal",
+    "image": "/img/Ambassadors/Rowida.jpeg",
+    "ambassadorRole": "Co-Ambassador",
+    "about": "Rowida Kamal is a Senior Satellite Thermal Control and Testing Engineer at the Egyptian Space Agency (ECSA), with over six years of experience in spacecraft thermal systems and mission readiness, contributing to thermal design, analysis, integration, and environmental testing for Low Earth Orbit and lunar missions. She has delivered specialized training in satellite thermal control for engineers from Kenya and Uganda under international capacity building initiatives, and served two consecutive years as a mentor for NASA Space Apps Cairo. Holding a Bachelor's degree in Aerospace Engineering, she is passionate about global collaboration in space technology, expanding opportunities for women in STEM, and empowering the next generation of space leaders through advisory and professional work."
+  },
+  {
+    "name": "Dr. Sandra Mjöll Jónsdóttir-Buch",
+    "image": "/img/Ambassadors/Sandra.jpeg",
+    "ambassadorRole": "Ambassador",
+    "about": "Sandra Mjöll Jónsdóttir-Buch, Ph.D. is an accomplished leader in biomedical and regenerative medicine with over 14 years of experience as a senior executive and life science entrepreneur, having mentored more than 150 entrepreneurs and startups across innovation, commercialization, and ecosystem development. Widely recognized for her practical, empowering coaching style and strategic leadership, she is an experienced keynote speaker with numerous accolades for her contributions to the global life science and innovation landscape."
+  },
+  {
+    "name": "Ms. Dusya Lyubovskaya",
+    "image": "/img/Ambassadors/Dusya.jpeg",
+    "ambassadorRole": "Ambassador",
+    "about": "Dusya Lyubovskaya is a clean-energy and advanced-materials ambassador working at the intersection of nuclear innovation and ethical resource tokenization. She builds global partnerships across energy, space, and emerging technologies to empower the next generation."
+  },
+  
   {
     "name": "Ms. Amena Karimyan",
     "image": "/img/Ambassadors/Ms. Amena Karimyan - Afghanistan.jpg",
@@ -69,49 +94,49 @@
   {
     "name": "Ms. Houéfa Alexia Todan",
     "image": "/img/Ambassadors/Ms_ Houéfa Alexia Todan Benin Co-ambassador.jpg",
-    "ambassadorRole": "Co Ambassador",
+    "ambassadorRole": "Co-Ambassador",
     "about": "A trained jurist and passionate advocate for the rights of children and girls, Houéfa devotes her energy to protecting the most vulnerable and promoting a more inclusive society. She supports young girls who are victims of violence through camps that offer safe spaces for expression, healing, and empowerment, while also leading regular outreach activities for children living on the streets. As a digital skills trainer, she introduces young people to the opportunities of the digital world and guides them toward promising career paths, helping them gain autonomy and preparing them to become future changemakers. She is also committed to the inclusion of deaf children through accessible education, awareness of sign language, and the creation of inclusive social spaces. Driven by a deep belief that every child deserves a nurturing and stimulating environment, she works daily to build a more equitable future where every voice, even the silent ones, can be heard"
   },
   {
     "name": "Ms. Meryn Zumbo Willetts",
     "image": "/img/Ambassadors/Ms_ Meryn Zumbo Willetts Norway Ambassador - Mission ShakthiSAT.jpg",
-    "ambassadorRole": "Co Ambassador",
+    "ambassadorRole": "Co-Ambassador",
     "about": "Meryn Zumbo Willetts is the CEO and co-founder of Umbrella, operating at the nexus of innovation, recruitment, inclusive leadership, and systemic change. With a global career spanning the private and public sectors, Meryn has led initiatives in strategy, policy transformation, and startup acceleration. Her expertise lies in crafting go-to-market strategies, fostering inclusive leadership, and designing sustainable growth systems for diverse organizations. Meryn co-hosts the Modern Idealist Podcast, a platform for ambitious professionals driving meaningful change, and actively pursues her passion for the performing arts. She has performed in productions like Ernestine and is co-writing a play exploring Norwegian paradoxes. Driven by her commitment to reimagining the global workforce, Meryn envisions a fairer, more inclusive world where everyone feels valued and respected. She believes in leveraging business innovation and art to foster societal transformation and belonging."
   },
   {
     "name": "Ms. Achillia Giasmin Machfount Georgakopoulou",
     "image": "/img/Ambassadors/Ms_ Achillia Giasmin Machfount Georgakopoulou Greece Co-Ambassador - Mission ShakthiSAT.jpg",
-    "ambassadorRole": "Co Ambassador",
+    "ambassadorRole": "Co-Ambassador",
     "about": "Achillia Giasmin Machfount Georgakopoulou is a dynamic second-year Aerospace Science and Technology student at the University of Athens, concurrently studying at the Hebrew University of Jerusalem. A multifaceted talent, Achillia blends her passion for space science with artistic expression—training in pipe organ, piano, and church music—and is fluent in Greek, French, English, Hebrew, and Turkish, with certification in Hieroglyphs. Her academic pursuits span a diverse range of scientific courses including Earth and Space Science, Cryptology, Astronomy, and the New Space Economy, enriched by hands-on experiences in programs like the Kalamata Students Space Program and engagements with Blue Origin. Achillia has earned numerous accolades in Mathematics and Physics, including awards from the Greek and French Olympiads, and has contributed to scholarly publications and conferences. Proficient in specialized software such as STK, Matlab, AutoCAD, and SolidWorks, she seamlessly integrates technical expertise with creative innovation. Poised to become a leader in the global space industry, Achillia is committed to pushing the boundaries of science and inspiring the next generation of explorers."
   },
   {
     "name": "Mrs. Madhuri Moyde",
     "image": "/img/Ambassadors/Mrs_ Madhuri Moyde - Regional Communicator - Northern India.jpg",
-    "ambassadorRole": "Co Ambassador",
+    "ambassadorRole": "Co-Ambassador",
     "about": "Mrs. Madhuri Moyde, M.Sc. (Chemistry), M.Ed., is a distinguished educationist, social activist, environmentalist, columnist, and FEM speaker with over 25 years of dedicated service in education and community development. Serving as a Senior Chemistry Teacher at Daly College, Indore, since 2000, she mentors CBSE and IGCSE students while also leading as Community Service In-Charge and House Mistress, integrating academic excellence with values-based leadership. Beyond teaching, she is the Founder of Vijay Social Welfare Society, Director of Parikranti Foundation, and Madhya Pradesh Co-ordinator of Mission ShaktiSAT, where she has spearheaded large-scale initiatives in menstrual hygiene, child safety, women’s empowerment, skill development, environmental protection, and climate education, directly impacting thousands of beneficiaries across the state. Her outstanding contributions have earned her numerous awards, including the Rastramata Padmavati Award (2025), Amazing Indians Award (2025) by Adani Group & Times Now, and Narmadiya Gaurav Award (2024). A visionary leader, she continues to inspire change through education, sustainability, and social reform."
   },
   {
     "name": "Dr. Sunita",
     "image": "/img/Ambassadors/DR_ SUNITA COO (Non Tech) - Mission ShakthiSAT.jpg",
-    "ambassadorRole": "Co Ambassador",
+    "ambassadorRole": "Co-Ambassador",
     "about": "Dr. Sunita is a healthcare leader, entrepreneur, and social reformer with global clinical experience in the USA. She holds a Doctor of Pharmacy, Ph.D. in Health AI, MBA, Harvard Cancer Genomics certification, and Stanford CME credentials. After returning to India, she founded Eutuxia Global, Doctors Pharmacy, and BElegant X, advancing healthcare innovation and women’s empowerment. Her Ayusha Chakra initiative delivers mobile hospital services and breast cancer screening, supporting over 700 patients daily. She played a vital role during COVID-19 by supplying medicines and oxygen. Honored nationally and internationally, she also mentors young women as Regional Director for Miss Universe Telangana, Andhra Pradesh, and Goa."
   },
   {
     "name": "Dr. Hana Aouinet",
     "image": "/img/Ambassadors/Dr_ Hana Aouinet France Co-Ambassador - Mission ShakthiSAT.jpg",
-    "ambassadorRole": "Co Ambassador",
+    "ambassadorRole": "Co-Ambassador",
     "about": "Dr. Hana Aouinet is a dual-PhD space engineering expert with degrees in Numerical Modelling, Fluid Mechanics, and Hydraulic Engineering from ENIT and INSA Toulouse. Recognized by UNOOSA’s Space4Women program, she has led major international space projects and actively promotes opportunities, scholarships, and STEM pathways for students worldwide. A strong advocate for women in aerospace, she frequently appears in media and serves as France Country Chair for Space Technology and Aviation within G100. She is a professor and researcher at ELISA Aerospace, where she also directs the Student Space Center, and is a conference speaker and published scientific author in satellite development."
   },
   {
     "name": "Ms. Ariadna Celeste Pillaca Llanos",
     "image": "/img/Ambassadors/Ms_ Ariadna Celeste Pillaca Llanos Special Ambassador - Mission ShakthiSAT.jpg",
-    "ambassadorRole": "Co Ambassador",
+    "ambassadorRole": "Co-Ambassador",
     "about": "Ariadna Celeste Pillaca Llanos is a 17-year-old Peruvian aspiring physicist and space education activist. Currently in her gap year, she is applying to universities in the USA, with MIT as her top choice. Passionate about astrophysics, she aims to pursue a Master’s and Ph.D. in the field. Beyond her love for space, she has diverse interests in music, psychology, philosophy, criminology, and law. Ariadna is dedicated to advancing the space sector and inspiring others through her advocacy and future research."
   },
   {
     "name": "Dr. Kanchi Das",
     "image": "/img/Ambassadors/Dr_ Kanchi Das Ambassador UAE, Qatar, Jordan, Oman, Egypt, Saudi, Bharain, Kuwait.jpg",
-    "ambassadorRole": "Co Ambassador",
+    "ambassadorRole": "Co-Ambassador",
     "about": "Dr. Kanchi Das, with over two decades in education, is a dynamic academic leader passionate about empowering students through innovative learning. Former Head of English, IBDP, and IBCP Coordinator at Dubai International Academy, she has driven curriculum excellence and diverse educational experiences. She has mentored students to top PISA Reading rankings, global competition wins, and admissions to leading universities. As a coach and consultant, she creates opportunities in AI, space technology, diplomacy, leadership, UN SDG projects, and sustainability, partnering with global experts and institutions. Dr. Das is dedicated to shaping ethical, critically-minded leaders who help change the world."
   },
   {
@@ -698,7 +723,7 @@
   {
     "name": "Ms. Laura",
     "image": "/img/Ambassadors/Ms_ Laura Rambaran-Seepersad - Trinidad and Tobago Co-ambassador - Mission ShakthiSAT.jpg",
-    "ambassadorRole": "Co Ambassador",
+    "ambassadorRole": "Co-Ambassador",
     "about": "Laura Rambaran-Seepersad is a dedicated leader in science, education, and public relations. She is the President of Soroptimist International Chaguanas and the PRO of CARISCIENCE, a UNESCO-affiliated NGO promoting science and technology in the Caribbean. She serves as a senior administrator at the University of the West Indies, spearheading initiatives like the Trinidad and Tobago Chemistry Olympiad and UWI-FST Science and Technology Week. With a background in environmental management, business, and occupational health and safety, Laura has held key roles in academia, corporate HSE, and cultural development. She has organized high-level conferences, developed national standards, and fostered industry-academic collaborations. Currently pursuing a PhD in Climate Change and Finance, she is passionate about sustainability, STEM outreach, and international diplomacy. Beyond her professional endeavors, she enjoys horse racing, dancing, and sports. Through her work, she continues to inspire and innovate across multiple fields."
   },
   {
@@ -776,13 +801,13 @@
   {
     "name": "Ms. Primerose Bomokayi",
     "image": "/img/Ambassadors/Ms_ Primerose Bomokayi Zimbabwe Ambassador - Mission Shakthisat.jpg",
-    "ambassadorRole": "Co - Ambassador",
+    "ambassadorRole": "Co-Ambassador",
     "about": "Primerose Bomokayi is an Engineer at Zimbabwe National Geospatial and Space Agency (ZINGSA), specialising in aerospace and aviation. With a background in aircraft maintenance engineering, she has honed her skills in aircraft avionics and electrical systems, working across various aircraft types including helicopters, military jets, cargo and unmanned aerial vehicles (drones). Her expertise extends from electronics to nanoscience and nanotechnology, holding a B.Tech Honors and an M.Sc in those respective fields. Dedicated to nurturing the next generation of engineers and aviators, Primerose is actively involved in tutoring apprentices in aircraft maintenance engineering as well as undergraduate students in Space Science and Applied Physics. Her unwavering commitment to innovation and is evident in her professional philosophy on the sky not being the limit, but rather another dimension awaiting exploration."
   },
   {
     "name": "Ms. Melody Marasha",
     "image": "/img/Ambassadors/Ms_ Melody Marasha Zimbabway Ambassador - Mission ShakthiSAT.jpg",
-    "ambassadorRole": "Co - Ambassador",
+    "ambassadorRole": "Co-Ambassador",
     "about": "Melody Marasha advocates for gender equality and climate action and has a background in science education and policy development. She holds a Bachelor's in Biochemistry from the University of the Witwatersrand and a Postgraduate Diploma in Education. She started as a science teacher, using innovative methods to inspire her students. She then joined the Ministry of Higher and Tertiary Education as a Programs Officer, shaping policies that promote scientific advancement and collaboration. Additionally, she is a prominent advocate for gender equality in STEM and integrates gender perspectives into environmental policies, driving impactful changes in her fields of advocacy."
   },
   {
@@ -813,13 +838,13 @@
   {
     "name": "Ms. Carmen M. Nzamba",
     "image": "/img/Ambassadors/Ms_ Carmen M_ Nzamba Ambassador of Republic of Gabon.jpg",
-    "ambassadorRole": "Co-ambassador",
+    "ambassadorRole": "Co-Ambassador",
     "about": "Carmen M. Nzamba is a seasoned global education specialist, entrepreneur and student mentor with over 15 years of experience teaching English in high schools, universities, and business institutions. She founded her own training business in 2021 and actively organizes academic conferences, business events, and webinars for international students and entrepreneurs. Since February 2025, she has served as the G100 France Country Chair for Global Networking. Carmen is also the founder and president of Buy & Promote Africa First (B-PAF) since 2020, and a committed volunteer with “100000 Entrepreneurs.” Her initiatives include launching a virtual company project for high schoolers, creating a “Parents Club” to support study trips, and founding the “Jeunes Ambassadeurs et Leaders d’Afrik” program. With a strong academic background in U.S. foreign policy and diplomacy, she was a visiting researcher in Montreal in 2010 and worked as a media consultant for TV5 and RFI from 2011 to 2012."
   },
   {
     "name": "Ms. Natasha Lumpa",
     "image": "/img/Ambassadors/Ms_ Natasha Lumpa Zambia Co-Ambassador.jpg",
-    "ambassadorRole": "Co-ambassador",
+    "ambassadorRole": "Co-Ambassador",
     "about": "Natasha Lumpa is a passionate development practitioner and Project Officer at She Entrepreneur Zambia, where she supports women through business development training, mentorship, and networking. With a diploma in Primary Education and currently pursuing a degree in Development Studies, Natasha combines her background in education with her commitment to community empowerment. She is driven by a vision to create lasting social impact, particularly through women empowerment events, youth leadership seminars, and literacy initiatives."
   },
   {
@@ -861,7 +886,7 @@
   {
     "name": "Ms. Fiorella Arias-Bonilla",
     "image": "/img/Ambassadors/Fiorella Arias-Bonilla - Costa Rica Co-Ambassador.jpg",
-    "ambassadorRole": "Co-ambassador",
+    "ambassadorRole": "Co-Ambassador",
     "about": "Fiorella Arias Bonilla is a Biotechnology Engineer from Costa Rica with experience in agricultural biotechnology, science diplomacy, and space sciences. As a Visiting Scholar at UC Davis, she researched functionalized hydrogels for Bioregenerative Life Support Systems and earned recognition for her thesis on sustainable agricultural systems for space habitats. She co-founded Orbital Space Technologies and ACACIE and has been honored as an Emerging Space Leader, Global Rising Star, LATAM Biotech Leader, and Forbes 30 Under 30 Central America awardee. A winner of the 2025 Space Station Design Workshop, she is dedicated to sustainability, rural development, BLiSS, mental health, and women’s rights."
   },
   {
