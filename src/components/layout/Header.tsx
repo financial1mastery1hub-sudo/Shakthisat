@@ -23,12 +23,12 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-purple-500/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 gap-2">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 min-w-64">
+          <Link to="/" className="flex items-center min-w-0 flex-1 lg:flex-none">
             <img 
               src="https://raw.githubusercontent.com/financial1mastery1hub-sudo/Shakthisat/main/src/img/shakthisat1.png" 
-              className="w-1/2" 
+              className="block h-8 w-auto max-w-full sm:h-10" 
               alt="Mission ShakthiSat - Global Space Initiative Empowering Girls" 
               title="Mission ShakthiSat - Space Tech India"
             />
@@ -53,11 +53,11 @@ const Header = () => {
           </nav>
 
           {/* Mobile menu button */}
-          <div className="lg:hidden text-nowrap">
+          <div className="lg:hidden flex items-center gap-1 shrink-0">
             <DonationButton></DonationButton>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className=" text-white p-2"
+            className="text-white p-2 shrink-0"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
