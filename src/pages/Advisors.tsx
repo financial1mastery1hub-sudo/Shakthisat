@@ -207,16 +207,6 @@ const Advisors = () => {
               <p className="text-white/80 leading-relaxed whitespace-pre-line">
                 {selected.desc}
               </p>
-
-              {selected.poster && (
-                <a
-                  href={selected.poster}
-                  target="_blank"
-                  className="inline-block mt-4 text-teal-300 underline"
-                >
-                  View Poster
-                </a>
-              )}
             </motion.div>
           </motion.div>
         )}

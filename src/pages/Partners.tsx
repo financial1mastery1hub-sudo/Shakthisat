@@ -1,9 +1,9 @@
 import { useEffect, useMemo } from "react";
 
-type Partner = {
+type PartnerLogo = {
   id: number;
-  name: string;
   logo: string;
+  alt: string;
 };
 
 const partnerImages = import.meta.glob("../img/Partners/*", {
@@ -12,53 +12,29 @@ const partnerImages = import.meta.glob("../img/Partners/*", {
   import: "default",
 });
 
-const resolvePartnerLogo = (logo: string): string => {
-  const cleaned = logo
-    .replace(/^\/?img\/?Partners\//i, "")
-    .replace(/^\/?partners\//i, "")
-    .replace(/^\//, "");
-
-  const key = `../img/Partners/${cleaned}`;
-  return (partnerImages[key] as string | undefined) ?? logo;
-};
-
 const Partners = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const partners: Partner[] = useMemo(
-    () =>
-      [
-        { id: 1, name: "ISRO", logo: "isro-indian-space-research-organisation-logo.jpg" },
-        { id: 2, name: "InSpace", logo: "inspace-logo.jpg" },
-        { id: 3, name: "BCI Aerospace", logo: "bci-aerospace-logo.png" },
-        { id: 4, name: "Alpha Impulsion", logo: "alpha-impulsion-logo.jpg" },
-        { id: 5, name: "Ananth Technologies", logo: "ananth-technologies-logo.jpg" },
-        { id: 6, name: "SIA India", logo: "sia-india-logo.jpg" },
-        { id: 7, name: "Niti Aayog", logo: "niti-aayog-logo.png" },
-        { id: 8, name: "Zoho Learn", logo: "zoho-learn-logo.jpg" },
-        { id: 9, name: "Zoho Webinar", logo: "zoho-webinar-logo.jpg" },
-        { id: 10, name: "WSW Association", logo: "wsw-association-logo.jpg" },
-        { id: 11, name: "WAN", logo: "wan-logo.jpg" },
-        { id: 12, name: "AEC", logo: "aec-logo.jpg" },
-        { id: 13, name: "Mireille", logo: "mireille-logo.jpg" },
-        { id: 14, name: "Databot", logo: "databot-logo.jpg" },
-        { id: 15, name: "Newrizon Space", logo: "newrizon-space-logo.jpg" },
-        { id: 16, name: "We For We", logo: "we-for-we-logo.jpg" },
-        { id: 17, name: "The Greatness Engineer", logo: "the-greatness-engineer-logo.jpg" },
-        { id: 18, name: "STEM Queens", logo: "stem-queens-logo.jpg" },
-        { id: 19, name: "MT Energy Resources", logo: "mt-energy-resources-logo.jpg" },
-        { id: 20, name: "Atmanirbhar Bharat", logo: "atmanirbhar-bharat-logo.jpg" },
-        { id: 21, name: "AIMERS Foundation", logo: "AIMERS_simple_logo.png" },
-        { id: 22, name: "Humax Corp", logo: "IMG_4936.JPG" },
-        { id: 23, name: "Desi Australia", logo: "Desi Australia Logo.png" },
-        { id: 24, name: "MAWF", logo: "MAWF.jpeg" },
-        { id: 25, name: "World Femme Parliament", logo: "World Femme Parliament.PNG" },
-        { id: 26, name: "M-Aashiyana Welfare Foundation", logo: "WhatsApp_Image_2026-04-06_at_14.29.24.jpeg" },
-      ].map((partner) => ({ ...partner, logo: resolvePartnerLogo(partner.logo) })),
-    [],
-  );
+  const partners: PartnerLogo[] = useMemo(() => {
+    const entries = Object.entries(partnerImages).sort(([a], [b]) => a.localeCompare(b));
+
+    return entries.map(([path, logo], index) => {
+      const filename = path.split("/").pop() ?? `partner-${index + 1}`;
+      const readableName = filename
+        .replace(/\.[^.]+$/, "")
+        .replace(/[_-]+/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+
+      return {
+        id: index + 1,
+        logo: logo as string,
+        alt: readableName ? `${readableName} logo` : `Partner ${index + 1} logo`,
+      };
+    });
+  }, []);
 
   return (
     <main className="relative min-h-screen bg-black text-white overflow-hidden">
@@ -95,7 +71,7 @@ const Partners = () => {
                 <div className="absolute inset-0 rounded-2xl border border-purple-400/20 group-hover:border-teal-300/40 transition-colors duration-300" />
                 <img
                   src={partner.logo}
-                  alt={`${partner.name} logo`}
+                  alt={partner.alt}
                   className="relative z-10 max-w-[70%] max-h-[70%] object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.4)]"
                   loading="lazy"
                 />
