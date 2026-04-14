@@ -77,7 +77,7 @@ const Footer = () => {
               <div className="flex items-start space-x-2 text-white/70">
                 <MapPin size={16} className="mt-0.5" />
                 <span className="text-sm leading-relaxed">
-                  Shambala Facility, Ispahani Centre,<br />
+                  Shambala, Ispahani Centre,<br />
                   123–124, Nungambakkam High Rd,<br />
                   Thousand Lights West,<br />
                   Chennai, Tamil Nadu 600034
