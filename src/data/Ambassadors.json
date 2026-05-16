@@ -344,7 +344,7 @@
     "name": "Ms. Ana Thompson",
     "image": "/img/Ambassadors/Ms_ Ana Thompson Honduras Ambassador - Mission ShakthiSAT.jpg",
     "ambassadorRole": "Ambassador",
-    "about": "Ana Thompson, an electrical engineer graduated from the National Autonomous University of Honduras. Currently participating in the Morazán Project as Payload Engineer, while also providing support for the data and energy subsystems, contributing to the development of the first Honduran satellite. Also in charge of the National Science and Technology Laboratory Center of Honduras, where initiatives are managed to promote scientific research and technological innovation in the country. The academic background includes a postgraduate specialization in Aerospace Systems and Industry from the University of Buenos Aires, and currently pursuing a master’s degree in Space Industry and Technology Management at the same university."
+    "about": "Ana Thompson, an electrical engineer graduated from the National Autonomous University of Honduras. Currently participating in the Morazán Project as Payload Engineer, while also providing support for the data and energy subsystems, contributing to the development of the first Honduran satellite. Also works as Academic Chief for Electronics engineering and Environmental Engineering at Universidad Tecnológica Centroamericana (UNITEC/CEUTEC). The academic background includes a postgraduate specialization in Aerospace Systems and Industry from the University of Buenos Aires, and currently pursuing a master’s degree in Space Systems and industry at the same university."
   },
   {
     "name": "Ms. Zsuzsanna Benyo",
@@ -894,5 +894,41 @@
     "image": "/img/Ambassadors/Ms_ Daniela Jovic Ambassador Croatia.jpg",
     "ambassadorRole": "Ambassador",
     "about": "Daniela Jovic is a space industry consultant, public speaker, and the founder of ORBITALYX, a company supporting satellite missions, business development, and communications across the NewSpace sector. She has led multiple satellite projects, including Croatia’s first satellite, CroCube, and collaborates with institutions, companies, and events across Europe and beyond. Her work spans mission coordination, launch strategy, brand positioning, and public engagement. Through every role, Daniela actively promotes visibility, inclusion, and access to space for emerging professionals and underrepresented communities, with a strong focus on education, storytelling, and cross-sector collaboration."
-  }
+  },
+   {
+  "name": "Ms. Minha Faiz Rashaad",
+  "image": "/img/Ambassadors/Ms_Minha_faid_Rashaad.jpeg",
+  "ambassadorRole": "Ambassador",
+  "about": "Minha Faiz Rashaad is a Maldivian media leader, women’s empowerment advocate, and social impact strategist committed to creating platforms that inspire change and opportunity for women and youth..."
+},
+{
+  "name": "Ms. Binuri Rajasinghe",
+  "image": "/img/Ambassadors/Binuri-Rajasinghe.jpeg",
+  "ambassadorRole": "Ambassador",
+  "about": "Binuri Rajasinghe is a multidisciplinary professional exploring the intersection of technology, communication, innovation, and youth empowerment. With a background in software engineering and experience across humanitarian communication, advocacy, and youth leadership, she combines technical expertise with strategic storytelling to make innovation more accessible and impactful. She earned her BSc (Hons) in Software Engineering from the University of Central Lancashire, specializing in Artificial Intelligence, full-stack development, and inclusive digital solutions. Passionate about women’s leadership, STEM, and emerging technologies, Binuri actively mentors youth and supports initiatives encouraging innovation, creativity, and meaningful social impact."
+},
+{
+  "name": "Ms. Miranda Satterthwaite",
+  "image": "/img/Ambassadors/Miranda-Satterthwaite.jpeg",
+  "ambassadorRole": "Ambassador",
+  "about": "Miranda Satterthwaite is an educator, astronautics advocate, and aerospace leader from New Zealand with extensive experience in STEM outreach, astro-tourism, and curriculum-based space education. She has worked with NASA educational programs, aerospace institutions, and Antarctic research initiatives, inspiring students through immersive space exploration experiences. Miranda currently serves as CEO of the Aotearoa Aerospace Academy and continues to champion innovation and space education globally."
+},
+{
+  "name": "Ms. Rasika Ramakrishnan",
+  "image": "/img/Ambassadors/Rasika-Ramakrishnan.jpeg",
+  "ambassadorRole": "Ambassador",
+  "about": "Rasika Ramakrishnan is an aspiring aerospace and mechanical engineer passionate about robotics systems, astrophysics, fluid mechanics, and space technology. Through academic excellence, engineering projects, and STEM leadership initiatives, she is building a strong foundation for future innovation in aerospace research. She has contributed to robotics competitions, rover systems, satellite projects, and science outreach programs while mentoring younger students and expanding access to STEM opportunities."
+},
+{
+  "name": "Ms. Alba Carolina Vásquez",
+  "image": "/img/Ambassadors/Alba-Carolina-Vasquez.jpeg",
+  "ambassadorRole": "Ambassador",
+  "about": "Alba Carolina Vásquez is a pilot trainee and pioneering analog astronaut from the Dominican Republic recognized for her leadership in space research, STEM education, and science outreach. She participated in simulated space missions at Habitat Marte and has led major international STEM initiatives, including NASA Space Apps programs and robotics education projects. Through Astroquisqueya, she continues empowering young people in science and space exploration across the Caribbean."
+},
+{
+  "name": "Ms. Raghad Maraqa",
+  "image": "/img/Ambassadors/Raghad-Maraqa.jpeg",
+  "ambassadorRole": "Ambassador",
+  "about": "Raghad Maraqa is a mechanical engineering undergraduate from Amman, Jordan, with a strong passion for robotics and space technology. She currently serves as a Payload Subsystem Lead for the Al Rhim SAT CubeSat project and is actively involved in aerospace innovation and student-led satellite development. She has led and contributed to major STEM initiatives, including serving as a local lead for the NASA Space Apps Challenge in Amman and participating in international AI and machine learning programs. Her work also extends to science communication and outreach, where she promotes space awareness and mentors young students, especially encouraging women to pursue careers in engineering and space. Driven by a vision to integrate robotics with future space missions, Raghad is building her path toward becoming an aerospace roboticist while actively contributing to the growth of the regional space ecosystem."
+}
 ]
