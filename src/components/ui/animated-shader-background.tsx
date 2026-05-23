@@ -114,7 +114,7 @@ const AnimatedShaderBackground = () => {
 
     const animate = () => {
       if (!isPausedRef.current) {
-        material.uniforms.iTime.value += 0.016;
+        material.uniforms.iTime.value += 0.25;
         renderer.render(scene, camera);
       }
       animationFrameRef.current = requestAnimationFrame(animate);
