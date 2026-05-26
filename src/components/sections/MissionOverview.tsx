@@ -12,7 +12,7 @@ const MissionOverview = () => {
 
   return (
     <>
-      {isMounted && <ScrollGlobe sectionIds={['mission-hero', 'what-shakthisat', 'why-girls', 'why-108']} />}
+      {isMounted && <ScrollGlobe sectionIds={['mission-hero', 'mission-poster', 'what-shakthisat', 'why-girls', 'why-108']} />}
       <section className='min-h-screen py-20 px-4 md:px-8' id='mission-hero' itemScope itemType="https://schema.org/Project">
         <meta itemProp="name" content="Mission ShakthiSat Overview" />
         <meta itemProp="description" content="Global space mission empowering 12,000 girls from 108 countries through satellite technology and STEM education" />

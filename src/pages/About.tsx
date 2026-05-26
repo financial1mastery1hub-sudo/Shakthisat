@@ -100,6 +100,15 @@ const AboutUs = () => {
               <span className="text-purple-300 font-semibold">108 talented students</span> in each
               country a life-changing opportunity to discover their passion.
             </p>
+            <div className="rounded-2xl overflow-hidden border border-purple-500/30 shadow-2xl shadow-purple-900/40 aspect-video">
+              <iframe
+                src="https://www.youtube.com/embed/PiWl1cicZH0"
+                title="Mission ShakthiSat Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
           </section>
 
           <div className="h-[1px] w-full bg-white/10" />

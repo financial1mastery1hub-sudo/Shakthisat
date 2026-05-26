@@ -16,6 +16,7 @@ interface ScrollGlobeProps {
 const defaultGlobeConfig = {
   positions: [
     { top: "50%", left: "75%", scale: 1 },     // mission-hero - centered in mission
+    { top: "50%", left: "75%", scale: 1.1 },   // mission-poster 
     { top: "40%", left: "25%", scale: 0.85 },  // what-shakthisat
     { top: "50%", left: "75%", scale: 1.1 },   // why-girls
     { top: "35%", left: "20%", scale: 0.9 },   // why-108
