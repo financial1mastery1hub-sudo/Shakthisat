@@ -3,25 +3,25 @@
     "name": "Ms. Yeshey Choden",
     "image": "/img/Ambassadors/Yeshey.jpeg",
     "ambassadorRole": "Ambassador",
-    "about": "Yeshey Choden is a Bhutanese space science professional, STEM educator, and social entrepreneur at the GovTech Agency, contributing to Bhutan's satellite development, remote sensing, and space education initiatives."
+    "about": "Yeshey Choden is a Bhutanese space science professional, STEM educator, and social entrepreneur at the GovTech Agency, contributing to Bhutan's satellite development, remote sensing, [...]"
   },
   {
     "name": "Ms. Rowida Kamal",
     "image": "/img/Ambassadors/Rowida.jpeg",
     "ambassadorRole": "Co-Ambassador",
-    "about": "Rowida Kamal is a Senior Satellite Thermal Control and Testing Engineer at the Egyptian Space Agency (ECSA), with over six years of experience in spacecraft thermal systems and mission requirements."
+    "about": "Rowida Kamal is a Senior Satellite Thermal Control and Testing Engineer at the Egyptian Space Agency (ECSA), with over six years of experience in spacecraft thermal systems and missi[...]"
   },
   {
     "name": "Dr. Sandra Mjöll Jónsdóttir-Buch",
     "image": "/img/Ambassadors/Sandra.jpeg",
     "ambassadorRole": "Ambassador",
-    "about": "Sandra Mjöll Jónsdóttir-Buch, Ph.D. is an accomplished leader in biomedical and regenerative medicine with over 14 years of experience as a senior executive and life science entrepreneur."
+    "about": "Sandra Mjöll Jónsdóttir-Buch, Ph.D. is an accomplished leader in biomedical and regenerative medicine with over 14 years of experience as a senior executive and life science entre[...]"
   },
   {
     "name": "Ms. Dusya Lyubovskaya",
     "image": "/img/Ambassadors/Dusya.jpeg",
     "ambassadorRole": "Ambassador",
-    "about": "Dusya Lyubovskaya is a clean-energy and advanced-materials ambassador working at the intersection of nuclear innovation and ethical resource tokenization. She builds global partnerships for sustainable innovation."
+    "about": "Dusya Lyubovskaya is a clean-energy and advanced-materials ambassador working at the intersection of nuclear innovation and ethical resource tokenization. She builds global partnersh[...]"
   },
   {
     "name": "Ms. Amena Karimyan",
@@ -33,7 +33,7 @@
     "name": "Ms. Alba Mustafaj",
     "image": "/img/Ambassadors/Ms. Alba Mustafaj.jpg",
     "ambassadorRole": "Ambassador",
-    "about": "Ms. Alba Mustafaj Software Engineer & Bar Raiser @Amazon, Winner of \"Technology All Star\" and \"STEM Outreach Champion\" Awards, Women in Tech Ambassador, University Engagement Program Lead"
+    "about": "Ms. Alba Mustafaj Software Engineer & Bar Raiser @Amazon, Winner of \"Technology All Star\" and \"STEM Outreach Champion\" Awards, Women in Tech Ambassador, University Engagement Pro[...]"
   },
   {
     "name": "Ms. Yango Ndofula",
@@ -45,13 +45,13 @@
     "name": "Dr. Abigail Ganopol",
     "image": "/img/Ambassadors/Dr. Abigail Ganopol - Argentina.jpg",
     "ambassadorRole": "Ambassador",
-    "about": "Dr. Abigail Ganopol has a PhD in Physics from the Faculty of Exact and Natural Sciences of the University of Buenos Aires, Argentina. Her field of expertise is the mathematical analysis of gauge field theory."
+    "about": "Dr. Abigail Ganopol has a PhD in Physics from the Faculty of Exact and Natural Sciences of the University of Buenos Aires, Argentina. Her field of expertise is the mathematical analy[...]"
   },
   {
     "name": "Ms. Hanna Harutyunyan",
     "image": "/img/Ambassadors/Ms. Hanna Harutyunyan - Armenia.jpg",
     "ambassadorRole": "Ambassador",
-    "about": "Robotics engineering student with over 6+ years of IT project management work experience. Pursuing Bachelor studies in robotics engineering, she's actively engaged in various space related projects."
+    "about": "Robotics engineering student with over 6+ years of IT project management work experience. Pursuing Bachelor studies in robotics engineering, she's actively engaged in various space r[...]"
   },
   {
     "name": "Marie-Nathalie Jauffret",
@@ -63,19 +63,19 @@
     "name": "Ms. Sukruti Narayanan",
     "image": "/img/Ambassadors/Ms. Sukruti Narayanan - Australia.jpg",
     "ambassadorRole": "Ambassador",
-    "about": "Sukruti Narayanan is a versatile communications professional and entrepreneur with expertise in media, public relations, stakeholder management, and technology. She is the Founder and CEO of The Hustler Journalist."
+    "about": "Sukruti Narayanan is a versatile communications professional and entrepreneur with expertise in media, public relations, stakeholder management, and technology. She is the Founder an[...]"
   },
   {
     "name": "Ms. Carmen Engele",
     "image": "/img/Ambassadors/Ms. Carmen Engele - AUSTRIA.jpg",
     "ambassadorRole": "Ambassador",
-    "about": "Carmen Engele is an award-winning aspiring scientist and engineer with extensive experience in the space industry. Currently a student and teaching assistant of Computational Science and Engineering at ETH Zürich."
+    "about": "Carmen Engele is an award-winning aspiring scientist and engineer with extensive experience in the space industry. Currently a student and teaching assistant of Computational Science[...]"
   },
   {
     "name": "Dr. Jacinta M. Higgs",
     "image": "/img/Ambassadors/Dr. Jacinta M. Higgs - Bahamas.jpg",
     "ambassadorRole": "Ambassador",
-    "about": "Dr. Jacinta M. Higgs is the Founder and President of Akhepran International Academy, an Afrocentric school in Fox Hill Village, The Bahamas. With over 40 years of experience, she is a distinguished educator."
+    "about": "Dr. Jacinta M. Higgs is the Founder and President of Akhepran International Academy, an Afrocentric school in Fox Hill Village, The Bahamas. With over 40 years of experience, she is [...]"
   },
   {
     "name": "Ms. Chiarath Olayindé Moutairou",
@@ -111,7 +111,7 @@
     "name": "Mrs. Madhuri Moyde",
     "image": "/img/Ambassadors/Mrs_ Madhuri Moyde - Regional Communicator - Northern India.jpg",
     "ambassadorRole": "Co-Ambassador",
-    "about": "Mrs. Madhuri Moyde, M.Sc. (Chemistry), M.Ed., is a distinguished educationist, social activist, environmentalist, columnist, and FEM speaker with over 25 years of dedicated service in education."
+    "about": "Mrs. Madhuri Moyde, M.Sc. (Chemistry), M.Ed., is a distinguished educationist, social activist, environmentalist, columnist, and FEM speaker with over 25 years of dedicated service [...]"
   },
   {
     "name": "Dr. Sunita",
@@ -634,12 +634,6 @@
     "image": "/img/Ambassadors/Ms_ Aminata Matturie Sierra Leone Ambassador - Mission ShakthiSAT.jpg",
     "ambassadorRole": "Ambassador",
     "about": "Scientist"
-  },
-  {
-    "name": "Ms. Diana Fernandes",
-    "image": "/img/Ambassadors/Dr_ Diana Amoni Ntewusu Ghana Ambasador - Mission ShakthiSAT.jpg",
-    "ambassadorRole": "Ambassador",
-    "about": "Madam Aminata Matturie is an activist, educator, and social worker with extensive experience."
   },
   {
     "name": "Ms. Vanja Angjelovikj",
