@@ -1,30 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
-  <!-- She Wings Logo -->
-  <!-- Wings -->
-  <g id="wings">
-    <!-- Left Wing -->
-    <path d="M 100 100 Q 80 120 70 150 Q 65 165 75 170 Q 85 165 95 145 Q 105 125 115 110 Q 110 105 100 100" fill="none" stroke="#E63946" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M 95 110 Q 85 125 80 140" fill="none" stroke="#E63946" stroke-width="2" stroke-linecap="round"/>
-    <path d="M 105 105 Q 95 120 88 135" fill="none" stroke="#E63946" stroke-width="2" stroke-linecap="round"/>
-    <path d="M 115 102 Q 105 115 100 128" fill="none" stroke="#E63946" stroke-width="2" stroke-linecap="round"/>
-    
-    <!-- Right Wing -->
-    <path d="M 300 100 Q 320 120 330 150 Q 335 165 325 170 Q 315 165 305 145 Q 295 125 285 110 Q 290 105 300 100" fill="none" stroke="#E63946" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M 305 110 Q 315 125 320 140" fill="none" stroke="#E63946" stroke-width="2" stroke-linecap="round"/>
-    <path d="M 295 105 Q 305 120 312 135" fill="none" stroke="#E63946" stroke-width="2" stroke-linecap="round"/>
-    <path d="M 285 102 Q 295 115 300 128" fill="none" stroke="#E63946" stroke-width="2" stroke-linecap="round"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="500" height="400">
+  <defs>
+    <style>
+      .she-text { font-family: Arial, sans-serif; font-weight: bold; font-size: 80px; }
+      .wings-text { font-family: Georgia, serif; font-style: italic; font-size: 60px; }
+      .trademark { font-size: 30px; }
+    </style>
+  </defs>
   
-  <!-- Head Circle -->
-  <circle cx="200" cy="90" r="20" fill="none" stroke="#808080" stroke-width="2"/>
+  <!-- Left Wing -->
+  <path d="M 120 80 Q 90 110 75 160 Q 70 180 85 185 Q 105 178 125 140 Q 140 110 150 85" 
+        fill="none" stroke="#E63946" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
   
-  <!-- Body -->
-  <path d="M 200 110 Q 195 140 200 160" fill="none" stroke="#E63946" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Left Wing - Inner feather lines -->
+  <path d="M 125 85 Q 110 105 95 135" fill="none" stroke="#E63946" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 135 82 Q 120 105 105 140" fill="none" stroke="#E63946" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 143 80 Q 128 105 110 145" fill="none" stroke="#E63946" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 149 82 Q 135 108 120 150" fill="none" stroke="#E63946" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 153 88 Q 140 115 128 158" fill="none" stroke="#E63946" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Right Wing -->
+  <path d="M 380 80 Q 410 110 425 160 Q 430 180 415 185 Q 395 178 375 140 Q 360 110 350 85" 
+        fill="none" stroke="#E63946" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Right Wing - Inner feather lines -->
+  <path d="M 375 85 Q 390 105 405 135" fill="none" stroke="#E63946" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 365 82 Q 380 105 395 140" fill="none" stroke="#E63946" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 357 80 Q 372 105 390 145" fill="none" stroke="#E63946" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 351 82 Q 365 108 380 150" fill="none" stroke="#E63946" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 347 88 Q 360 115 372 158" fill="none" stroke="#E63946" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Head (circle) -->
+  <circle cx="250" cy="75" r="18" fill="none" stroke="#808080" stroke-width="2.5"/>
+  
+  <!-- Body line -->
+  <path d="M 250 93 L 250 170" fill="none" stroke="#E63946" stroke-width="3" stroke-linecap="round"/>
   
   <!-- Center dot -->
-  <circle cx="200" cy="135" r="2" fill="#808080"/>
+  <circle cx="250" cy="130" r="2.5" fill="#808080"/>
   
-  <!-- Registered trademark -->
-  <circle cx="350" cy="40" r="8" fill="none" stroke="#808080" stroke-width="1"/>
-  <text x="350" y="45" font-size="10" font-weight="bold" fill="#808080" text-anchor="middle">®</text>
+  <!-- Triangle/Y shape at bottom of body -->
+  <path d="M 250 170 L 240 185" fill="none" stroke="#999999" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 250 170 L 260 185" fill="none" stroke="#999999" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- SHE text (red) -->
+  <text x="90" y="280" class="she-text" fill="#E63946">SHE</text>
+  
+  <!-- Wings text (gray italic) -->
+  <text x="280" y="310" class="wings-text" fill="#999999">Wings</text>
+  
+  <!-- Registered Trademark ® -->
+  <circle cx="445" cy="55" r="12" fill="none" stroke="#CCCCCC" stroke-width="2"/>
+  <text x="445" y="65" class="trademark" fill="#CCCCCC" text-anchor="middle" font-weight="bold">®</text>
 </svg>
