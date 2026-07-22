@@ -910,5 +910,11 @@
     "image": "/img/Ambassadors/Raghad-Maraqa.jpeg",
     "ambassadorRole": "Ambassador",
     "about": "Raghad Maraqa is a mechanical engineering undergraduate from Amman, Jordan, with a strong passion for robotics and space technology."
-  }
+  },
+{
+  "name": "Ms. Sadna Isik",
+  "image": "/img/Ambassadors/Sadna-Isik.jpeg",
+  "ambassadorRole": "Ambassador",
+  "about": "Sadna Isik is a Canada and turkey based scientist, engineer, and interdisciplinary innovator spanning electrical engineering, cybersecurity, nanotechnology, and conservation."
+}
 ]
