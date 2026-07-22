@@ -196,11 +196,13 @@
     "image": "/img/Advisors/35.jpg",
     "desc": "Dr. Madhavi Advani is a globally recognized luxury consultant, TEDx speaker, author, and entrepreneur known for her diverse work across real estate, art, hospitality, fashion, wellness, and bespoke events. As the founder of LuxuryCo.Biz and Luxury Club, she has built a strong international presence in the luxury and lifestyle ecosystem. Beyond business, she is an adventurer with pursuits in flying, mountaineering, and trekking, reflecting a dynamic and multidimensional personality. Her influence is widely recognized through prestigious awards and global media coverage, including a documentary film highlighting her journey as a leader. As an advisor, she brings a unique blend of global networks, strategic insight, and experiential leadership to high-value collaborations and international positioning.",
     "poster": "https://example.com/poster35"
-}
-
-
-
-
+    },
+    {
+    "name": "Ms. Sadna Isik",
+    "image": "/img/Advisors/36.jpeg",
+    "desc": "Sadna Isik is a scientist, engineer, entrepreneur, and interdisciplinary innovator whose work spans electrical and computer engineering, cybersecurity, nanotechnology, wildlife conservation, and integrative medicine. Originally from Sri Lanka and educated internationally, she brings a global, systems-driven perspective to solving complex modern challenges, bridging science, innovation, and entrepreneurship to inspire creativity and cross-disciplinary thinking.",
+    "poster": "https://example.com/poster-sadna"
+    }
 
  
 ]
