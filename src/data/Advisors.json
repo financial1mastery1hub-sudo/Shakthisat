@@ -208,5 +208,12 @@
     "image": "/img/Advisors/kasturi.jpg",
     "desc": "Dr. Kasthuri Venkatachalam is an accomplished Advisor to Mission ShakthiSAT, bringing deep expertise in space science and women's empowerment. With a strong commitment to advancing STEM education, she champions innovation and inclusive leadership.",
     "poster": "https://example.com/poster-kasthuri-venkatachalam"
-  }
+  },
+    {
+    "name": "Ms. Sadna Isik",
+    "image": "/img/Advisors/Ms_ Sadna Isik.jpg",
+    "desc": "Sadna Isik is a scientist, engineer, entrepreneur, and interdisciplinary innovator whose work spans electrical and computer engineering, cybersecurity, nanotechnology, wildlife conservation, and integrative medicine. Originally from Sri Lanka and educated internationally, she brings a global, systems-driven perspective to solving complex modern challenges, bridging science, innovation, and entrepreneurship to inspire creativity and cross-disciplinary thinking.",
+    "poster": "https://example.com/poster-sadna"
+    }
+
 ]
