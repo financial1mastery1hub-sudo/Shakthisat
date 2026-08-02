@@ -20,6 +20,7 @@ const defaultGlobeConfig = {
     { top: "40%", left: "25%", scale: 0.85 },  // what-shakthisat
     { top: "50%", left: "75%", scale: 1.1 },   // why-girls
     { top: "35%", left: "20%", scale: 0.9 },   // why-108
+    { top: "55%", left: "20%", scale: 1.0 },   // team-india-phase2 — diagonal from why-108
   ]
 };
 
