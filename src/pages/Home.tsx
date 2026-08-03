@@ -5,6 +5,7 @@ import WhatIsShakthiSat from '../components/sections/WhatIsShakthiSat';
 import WhyGirlsInSpace from '../components/sections/WhyGirlsInSpace';
 import Why108Countries from '../components/sections/Why108Countries';
 import MissionPoster from '../components/sections/MissionPoster';
+import TeamIndiaPhase2 from '../components/sections/TeamIndiaPhase2';
 
 // SEO-optimized content component
 const ShakthiSatContent = () => {
@@ -20,6 +21,7 @@ const ShakthiSatContent = () => {
       <WhyGirlsInSpace />
       <Why108Countries />
       <MissionPoster />
+      <TeamIndiaPhase2 />
     </div>
   );
 };
