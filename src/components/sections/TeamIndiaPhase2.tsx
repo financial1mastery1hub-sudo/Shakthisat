@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
+import teamIndiaPhase2Img from '../../img/1.png';
 
 const TeamIndiaPhase2 = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -113,7 +114,7 @@ const TeamIndiaPhase2 = () => {
               <div className='absolute inset-0  pointer-events-none' />
 
               <img
-                src='src/img/1.png'
+                src={teamIndiaPhase2Img}
                 alt='Mission ShakthiSat Team India Phase 2 - 10 young women from across India selected for the national space mission at Gautam Buddha University, Greater Noida, August 23-31, 2026'
                 className='w-full h-auto block transition-transform duration-[1200ms] ease-out group-hover:scale-[1.02]'
                 loading='lazy'
