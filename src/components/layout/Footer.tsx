@@ -97,17 +97,17 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-purple-500/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-purple-500/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-3">
           <p className="text-white/60 text-sm" itemProp="copyrightNotice">
-            © {currentYear} ShakthiSAT Mission. All rights reserved. Join the mission to inspire the next generation of space leaders
+            © {currentYear} ShakthiSAT Mission. All rights reserved.
           </p>
 
-          <div className="flex items-center space-x-6 mt-4 md:mt-0">
+          <div className="flex flex-wrap items-center justify-center gap-2 text-center">
             <a
               href="https://vectoraslab.com"
               target="_blank"
               rel="noreferrer"
-              className="rounded-md border border-purple-400/50 bg-purple-500/10 px-3 py-1.5 text-sm font-semibold text-purple-200 shadow-lg shadow-purple-500/10 transition hover:border-purple-300 hover:bg-purple-500/20 hover:text-white"
+              className="inline-block text-sm font-semibold text-purple-200 underline decoration-purple-400 underline-offset-4 decoration-2 transition hover:text-white"
             >
               Engineered by Vectoars Lab
             </a>
