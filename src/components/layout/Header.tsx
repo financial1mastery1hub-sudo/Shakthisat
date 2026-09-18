@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import DonationButton from '../ui/donation-button';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
@@ -49,18 +48,16 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <DonationButton></DonationButton>
           </nav>
 
           {/* Mobile menu button */}
           <div className="lg:hidden flex items-center gap-1 shrink-0">
-            <DonationButton></DonationButton>
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-white p-2 shrink-0"
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-white p-2 shrink-0"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
           </div>
         </div>
 
