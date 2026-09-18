@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { Globe, Mail, MapPin, Phone } from 'lucide-react';
-import DonationButton from '../ui/donation-button';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -19,13 +18,12 @@ const Footer = () => {
     <footer className="relative z-10 bg-black/90 border-t border-purple-500/20 mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className='flex flex-grow justify-center sm:justify-start'>
-                <img 
-                  src="https://raw.githubusercontent.com/financial1mastery1hub-sudo/Shakthisat/main/src/img/shakthisat.png" 
+              <div className="flex flex-grow justify-center sm:justify-start">
+                <img
+                  src="https://raw.githubusercontent.com/financial1mastery1hub-sudo/Shakthisat/main/src/img/shakthisat.png"
                   className="w-1/2"
                   alt="Mission ShakthiSat - Space Kidz India Logo"
                   title="Mission ShakthiSat - Empowering 12,000 Girls from 108 Countries"
@@ -67,12 +65,11 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Section Updated */}
+          {/* Contact Section */}
           <div>
             <h3 className="text-white font-semibold mb-4">Contact</h3>
 
             <div className="space-y-3">
-              
               {/* Address */}
               <div className="flex items-start space-x-2 text-white/70">
                 <MapPin size={16} className="mt-0.5" />
@@ -95,14 +92,8 @@ const Footer = () => {
                 <Phone size={16} />
                 <span className="text-sm">+91 8122412261</span>
               </div>
-
-              {/* Donation Button */}
-              <div className='pt-5'>
-                <DonationButton />
-              </div>
             </div>
           </div>
-
         </div>
 
         {/* Bottom Bar */}
@@ -112,10 +103,13 @@ const Footer = () => {
           </p>
 
           <div className="flex items-center space-x-6 mt-4 md:mt-0">
-            <a href='fluxstudio.in'>
-              <span className="text-white/60 text-sm">
-                Developed by FLUX STUDIO
-              </span>
+            <a
+              href="https://vectoraslab.com"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-md border border-purple-400/50 bg-purple-500/10 px-3 py-1.5 text-sm font-semibold text-purple-200 shadow-lg shadow-purple-500/10 transition hover:border-purple-300 hover:bg-purple-500/20 hover:text-white"
+            >
+              Engineered by Vectoars Lab
             </a>
             <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-teal-500"></div>
             <span className="text-white/60 text-sm">Empowering Girls in Space</span>
