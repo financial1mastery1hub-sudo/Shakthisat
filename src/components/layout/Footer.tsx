@@ -97,23 +97,24 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-purple-500/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-3">
-          <p className="text-white/60 text-sm" itemProp="copyrightNotice">
-            © {currentYear} ShakthiSAT Mission. All rights reserved.
-          </p>
+        <div className="border-t border-purple-500/20 mt-8 pt-8 flex flex-col items-center gap-5 text-center">
+          <a
+            href="https://vectoraslab.com"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center rounded-full border-2 border-purple-400/70 bg-gradient-to-r from-purple-500/20 to-teal-500/20 px-6 py-3 text-base font-bold tracking-wide text-white shadow-lg shadow-purple-900/30 transition hover:scale-105 hover:border-teal-300 hover:from-purple-500/30 hover:to-teal-500/30"
+            aria-label="Engineered by Vectoras Lab"
+          >
+            Engineered by Vectoras Lab
+          </a>
 
-          <div className="flex flex-wrap items-center justify-center gap-2 text-center">
-            <a
-              href="https://vectoraslab.com"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-block text-sm font-semibold text-purple-200 underline decoration-purple-400 underline-offset-4 decoration-2 transition hover:text-white"
-            >
-              Engineered by Vectoars Lab
-            </a>
-            <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-teal-500"></div>
+          <div className="flex flex-wrap items-center justify-center gap-2">
+            <p className="text-white/60 text-sm" itemProp="copyrightNotice">
+              © {currentYear} ShakthiSAT Mission. All rights reserved.
+            </p>
+            <span className="text-white/30">•</span>
             <span className="text-white/60 text-sm">Empowering Girls in Space</span>
-            <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-teal-500"></div>
+            <span className="text-white/30">•</span>
             <span className="text-white/60 text-sm">Global STEM Initiative</span>
           </div>
         </div>
