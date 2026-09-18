@@ -97,15 +97,32 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-purple-500/20 mt-8 pt-8 flex flex-col items-center gap-5 text-center">
+        <div className="border-t border-purple-500/20 mt-8 pt-8 flex flex-col items-center gap-6 text-center">
           <a
             href="https://vectoraslab.com"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center rounded-full border-2 border-purple-400/70 bg-gradient-to-r from-purple-500/20 to-teal-500/20 px-6 py-3 text-base font-bold tracking-wide text-white shadow-lg shadow-purple-900/30 transition hover:scale-105 hover:border-teal-300 hover:from-purple-500/30 hover:to-teal-500/30"
+            className="group inline-flex items-center gap-4 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400/70 focus-visible:ring-offset-4 focus-visible:ring-offset-black"
             aria-label="Engineered by Vectoras Lab"
           >
-            Engineered by Vectoras Lab
+            <span
+              aria-hidden="true"
+              className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden border border-purple-300/40 bg-white/[0.04] text-lg font-black italic text-white transition-colors duration-300 group-hover:border-teal-300/70 group-hover:bg-white/[0.09]"
+            >
+              V
+              <span className="absolute bottom-0 left-0 h-px w-full bg-gradient-to-r from-purple-400 to-teal-300" />
+            </span>
+            <span className="flex flex-col leading-none">
+              <span className="mb-1 text-[10px] font-medium uppercase tracking-[0.28em] text-white/45 transition-colors group-hover:text-white/70">
+                Engineered by
+              </span>
+              <span className="bg-gradient-to-r from-white via-purple-100 to-teal-200 bg-clip-text text-lg font-bold tracking-[0.14em] text-transparent">
+                VECTORAS LAB
+              </span>
+            </span>
+            <span aria-hidden="true" className="ml-1 text-lg text-white/30 transition-all duration-300 group-hover:translate-x-1 group-hover:text-teal-300">
+              ↗
+            </span>
           </a>
 
           <div className="flex flex-wrap items-center justify-center gap-2">
